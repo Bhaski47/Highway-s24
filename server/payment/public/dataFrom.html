@@ -1,0 +1,64 @@
+<html>
+<head>
+</head>
+<body>
+	<form method="POST" name="customerData" action="https://technoways-svce-backend.vercel.app/ccavRequestHandler">
+		<table width="40%" height="100" border='1' align="center">
+			<caption>
+				<font size="4" color="blue"><b>Integration Kit</b></font>
+			</caption>
+		</table>
+		<table width="40%" height="100" border='1' align="center">
+			<tr>
+				<td>Parameter Name:</td>
+				<td>Parameter Value:</td>
+			</tr>
+			<tr>
+				<td colspan="2">Compulsory information</td>
+			</tr>
+			<tr>
+				<td colspan="2">Billing information(optional):</td>
+			</tr>
+			<tr>
+				<td>Billing Name</td>
+				<td><input type="text" name="billing_name" value="Peter" /></td>
+			</tr>
+			<tr>
+				<td>Billing Address:</td>
+				<td><input type="text" name="billing_address"
+					value="Santacruz" /></td>
+			</tr>
+			<tr>
+				<td>Billing City:</td>
+				<td><input type="text" name="billing_city" value="Mumbai" /></td>
+			</tr>
+			<tr>
+				<td>Billing State:</td>
+				<td><input type="text" name="billing_state" value="MH" /></td>
+			</tr>
+			<tr>
+				<td>Billing Zip:</td>
+				<td><input type="text" name="billing_zip" value="400054" /></td>
+			</tr>
+			<tr>
+				<td>Billing Tel:</td>
+				<td><input type="text" name="billing_tel" value="9876543210" />
+				</td>
+			</tr>
+			<tr>
+				<td>Billing Email:</td>
+				<td><input type="text" name="billing_email"
+					value="testing@domain.com" /></td>
+			</tr>
+			<tr>
+				<td>Customer Id:</td>
+				<td><input type="text" name="customer_identifier" value=""/></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><INPUT TYPE="submit" value="Checkout"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
