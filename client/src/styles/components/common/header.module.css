@@ -1,0 +1,148 @@
+.container {
+    font-family: "Space Grotesk", sans-serif;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.325);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(50, 44, 44, 0.258);
+    backdrop-filter: blur(10px);
+    border: 1px solid none;
+    background-color: #0c0c0f;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0 0 22px 22px;
+    z-index: 5;
+    font-weight: bold;
+  }
+  
+  .active{
+    color: red;
+  }
+  .inactive{
+    color: white;
+  }
+  .logo {
+    width: 200px;
+    margin: 1rem 0.5rem 0.5rem 2rem;
+  }
+  .svceLogo {
+    width: 200px;
+    align-self: center;
+    /* align-content: center; */
+    margin: 20px auto 20px 20px;
+  }
+  
+  .menu {
+    display: none;
+    height: 2rem;
+    width: 2rem;
+    color: white;
+    margin: 0 2rem 0 0;
+  }
+  
+  .close {
+    height: 2rem;
+    width: 2rem;
+    color: white;
+    transition: all 0.4s ease-in;
+    margin: 1.8rem 0rem 0 0rem;
+    position: absolute;
+    right: 2rem;
+  }
+  
+  .navMobile {
+    display: none;
+    border-radius: 30px 0 0 30px;
+    border: 1px solid #fff;
+    position: fixed;
+    background-color: #0000003f;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    width: 70%;
+    height: 100%;
+    padding: 0rem 0 0 1rem;
+    font-size: x-large;
+    transition: all  400ms ease-out;
+  }
+  
+  .navMobile>nav>a {
+    text-decoration: none;
+    font-family: "DM Sans";
+  }
+  
+  .navMobile>nav {
+    margin: 6rem 0 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .navMobile>section {
+    padding: 0rem 0 0 1rem;
+    bottom: 0;
+    color: white;
+    
+    position: absolute;
+  }
+  
+  .navMobile>section>p {
+    color: white;
+    
+    font-family: "DM Sans";
+  }
+  
+  .navDesktop {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    & a {
+      text-decoration: none;
+      margin-right:1rem ;
+      transition: all 200ms ease-in-out;
+      &:hover {
+        transform: translateY(-5px);
+        text-decoration: none;
+        display: inline-block;
+        color: #eb0029;
+      }
+    }
+  }
+  
+  .navMobile.hide {
+    right: -50rem;
+  }
+  
+  .navMobile.open {
+    right: 0;
+  }
+  
+  .userDetails {
+    color: white;
+    display: flex;
+    gap: 1rem;
+    margin-right: 3rem;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .container {
+      border-radius: 0 0 22px 22px;
+    }
+  
+    .navDesktop {
+      display: none;
+    }
+  
+    .navMobile {
+      display: block;
+    }
+  
+    .svceLogo{
+      display: none;
+    }
+  
+    .menu {
+      display: block;
+    }
+  }
+  

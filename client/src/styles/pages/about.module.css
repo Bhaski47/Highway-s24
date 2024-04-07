@@ -1,0 +1,104 @@
+@media screen and (width < 480px) {
+    .container{
+        margin: auto;
+        width: 80vw;
+    }
+    
+    .imgContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        /* background-color: red; */
+    }
+    
+    .img{
+        height: 25vh;
+        width: 100%;
+        border-radius: 25px;
+    }
+    
+    .aboutInfo{
+        min-width: 40%;
+        font-size: small;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+        column-gap: 30px;
+    }
+    
+    .aboutHigh{
+        margin-top: 5%;
+        /* font-size: 1vw; */
+        line-height: 45px;
+    }    
+}
+@media screen and (width >= 481px) and (width <=1023px) {
+    .container{
+        margin: auto;
+        width: 80vw;
+    }
+    
+    .imgContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        /* background-color: red; */
+    }
+    
+    .img{
+        height: 40vh;
+        width: 100%;
+        border-radius: 25px;
+    }
+    
+    .aboutInfo{
+        min-width: 40%;
+        font-size: small;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+        column-gap: 30px;
+    }
+    
+    .aboutHigh{
+        margin-top: 5%;
+        /* font-size: 1vw; */
+        line-height: 45px;
+    }    
+}
+@media screen and (width >= 1024px) {
+    .container{
+        margin: auto;
+        width: 80vw;
+    }
+    
+    .imgContainer{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        /* background-color: red; */
+    }
+    
+    .img{
+        height: 50vh;
+        width: 100%;
+        border-radius: 25px;
+    }
+    
+    .aboutInfo{
+        min-width: 40%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+        column-gap: 30px;
+    }
+    
+    .aboutHigh{
+        margin-top: 5%;
+        font-size: 1vw;
+        line-height: 45px;
+    }
+}
