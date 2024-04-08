@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
 
-function Header() {
+const Header:React.FC=()=> {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
 
   return (

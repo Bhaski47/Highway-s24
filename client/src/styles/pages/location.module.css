@@ -1,0 +1,214 @@
+
+.location {
+    min-height: 85vh;
+    padding-top: 10rem;
+    margin: auto;
+    font-family: "Bangers", sans-serif;
+  }
+  
+  .heading {
+    cursor: default;
+    padding-bottom: 3rem;
+    font-size: 50px;
+  }
+  
+  .flexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #51A0DA;
+    min-height: 60vh;
+    padding: 1%;
+    width: 80%;
+    border-radius: 44px;
+    /* background-color: rgba(50, 44, 44, 0.258); */
+    backdrop-filter: blur(10px);
+  }
+  
+  .map {
+    border-radius: 25px;
+    border: #77add3 3px solid;
+    width: 60%;
+    height: 50vh;
+  }
+  
+  .locationDetails {
+    margin: 0 0rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+    /* height: 30vh; */
+    /* background-color: red; */
+    /* color: #4d291a; */
+  }
+  
+  .locationDetails > h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+  }
+  .locationDetails > p {
+    padding: 1rem 0 1rem 0;
+    font-family: "DM Sans";
+    font-size: 20px;
+  }
+  
+  /* .routeButton {
+    padding: 2% 4%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgba(50, 44, 44, 0.258);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #503938;
+  }
+  
+  .routeButton:hover {
+    border: 2px solid #eb0029;
+    box-shadow: 0px 0px 40px 0px #eb0029;
+    color: #fff;
+    transform: translateY(-7px);
+  } */
+  .routeButton {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #fff;
+  }
+  .routeButton:hover {
+    background-color: #000;
+    border: 2px solid #fff;
+    /* box-shadow: 0px 0px 40px 0px #fff; */
+    color: #fff;
+    /* transform: translateY(-7px); */
+  }
+  .buttonContainer {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0 4vw;
+  }
+  .titleHighlight {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    /* border: 2px solid #61f7ca; */
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #fff;
+  }
+  
+  /* .titleHighlight:hover {
+    color: #000;
+    background-color: #fff;
+  } */
+  
+  .titleHighlight:active {
+    transform: translateY(-1px);
+  }
+  
+  @media screen and (width < 800px) {
+    .routeButton {
+        padding: 1rem 1rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: #000;
+        background-color: #fff;
+        backdrop-filter: blur(10px);
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        border: 2px solid #fff;
+      }
+    
+      .routeButton:hover {
+        /* background-color: #c00020; */
+        /* border: 2px solid #eb0029; */
+        /* box-shadow: 0px 0px 40px 0px #eb0029; */
+        color: #000;
+        background-color: #fff;
+        /* transform: translateY(-7px); */
+      }
+    .flexContainer {
+      display: block;
+      margin-bottom: 4rem;
+      width: 90%;
+    }
+    .buttonContainer {
+      width: 60%;
+      margin: auto;
+      margin-bottom: 4rem;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      gap:4vw 0vw
+    }
+    .locationDetails {
+      margin: 3rem 1rem 0 1rem;
+    }
+    .map {
+      margin-top: 30px;
+      width: 80vw;
+    }
+    .routeButton {
+      text-decoration: none;
+      padding: 4% 8%;
+    }
+    .titleHighlight{
+      padding: 1rem 1rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-weight: 500;
+      color: #fff;
+      background-color: #000;
+      backdrop-filter: blur(10px);
+      border: none;
+      border-radius: 5px;
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      outline: none;
+      border: 2px solid #fff;
+    }
+    .titleHighlight:hover {
+        /* background-color: #c00020; */
+        /* border: 2px solid #eb0029; */
+        /* box-shadow: 0px 0px 40px 0px #eb0029; */
+        color: #000;
+        background-color: #fff;
+        /* transform: translateY(-7px); */
+      }
+  }
+  

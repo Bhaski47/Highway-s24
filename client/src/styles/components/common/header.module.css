@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 .container {
-    font-family: "Space Grotesk", sans-serif;
+  font-family: "Abril Fatface", serif;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.325);
     width: 100%;

@@ -1,12 +1,16 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import styles from "../styles/pages/about.module.css";
 import ark1 from "../assets/images/ark1.jpg";
+import Header from "../components/common/Header";
+import Footer from "../components/common/Footer";
 const About: React.FC = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = "About | Highways";
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  //   document.title = "About | Highways";
+  // }, []);
   return (
+    <>
+    <Header/>
     <div className={styles.container}>
       <div className={styles.imgContainer}>
         <img src={ark1} alt="ark1" className={styles.img} />
@@ -36,6 +40,7 @@ const About: React.FC = () => {
         set to take the stage on the 3rd, and 4th of May 2024.
       </p>
     </div>
+    </>
   );
 };
 

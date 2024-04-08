@@ -4,7 +4,8 @@ import styles from "../styles/pages/home.module.css";
 import Header from "../components/common/Header";
 import { NavLink } from "react-router-dom";
 import About from "./About";
-function Home() {
+import Footer from "../components/common/Footer";
+const Home:React.FC=()=> {
   return (
     <>
       <Header />
@@ -56,6 +57,7 @@ function Home() {
         </div>
       </div>
       <About/>
+      <Footer/>
     </>
   );
 }

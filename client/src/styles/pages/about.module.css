@@ -1,5 +1,6 @@
 @media screen and (width < 480px) {
     .container{
+        padding: 15vh 0;
         margin: auto;
         width: 80vw;
     }
@@ -35,6 +36,7 @@
 }
 @media screen and (width >= 481px) and (width <=1023px) {
     .container{
+        padding: 20vh 0;
         margin: auto;
         width: 80vw;
     }
@@ -70,6 +72,7 @@
 }
 @media screen and (width >= 1024px) {
     .container{
+        padding: 20vh 0;
         margin: auto;
         width: 80vw;
     }
