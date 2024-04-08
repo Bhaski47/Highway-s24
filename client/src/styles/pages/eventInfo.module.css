@@ -1,0 +1,119 @@
+.container {
+    height: 80vh;
+    width: 80%;
+    margin: auto;
+    font-family: "Space Grotesk", sans-serif;
+  }
+  
+  .wrapper {
+    padding: 7rem 0 3rem 0;
+  }
+  
+  /* .img {
+    height: 80vh;
+    position: relative;
+    width: 100%;
+    margin: auto;
+  } */
+  
+  .contextContainer {
+    /* background: url("../../assets/images/eventCard.png"); */
+    border-radius: 44px;
+    /* background-color: red; */
+    background-color: rgba(50, 44, 44, 0.258);
+    backdrop-filter: blur(10px);
+    background-size: 100% 100%;
+    padding: 2rem 2rem 2rem 2rem;
+    line-height: 1.7rem;
+    border: 1px solid #503938;
+  }
+  
+  .contextContainer > p:nth-child(2) {
+    margin: 1rem 0 1rem 0;
+    line-height: normal;
+  }
+  
+  .contextContainer > ul {
+    margin-left: 1rem;
+  }
+  
+  .details {
+    font-size: 14px;
+    display: flex;
+    margin: 1rem 0 1rem 0;
+    justify-content: space-around;
+  }
+  
+  .getPass {
+    /* cursor: pointer; */
+    padding: 9px 14px 9px 14px;
+    background: transparent;
+    background-color: rgba(50, 44, 44, 0.258);
+  
+    border: 1px solid #503938;
+    backdrop-filter: blur(10px);
+  
+    /* border: #eb0029 solid 2px; */
+    border-radius: 10px;
+    margin: 2rem 0 2rem 0;
+    color: white;
+    letter-spacing: 1px;
+    font-size: large;
+    transition: 300ms;
+  }
+  
+  .getPass:hover {
+    border: 1px solid #eb0029;
+    box-shadow: 0px 0px 40px 1px #eb002787;
+  }
+  
+  .scrollingText {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .scrollingText p {
+    letter-spacing: 5px;
+    animation: marquee 20s linear infinite;
+    /* animation-direction: normal; */
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @media screen and (width < 1360px) {
+    .scrollingText p {
+      letter-spacing: 2px;
+      animation: marquee 10s linear infinite;
+      /* animation-direction: normal; */
+    }
+  
+    .container {
+      width: 90%;
+    }
+    .wrapper {
+      &h1 {
+        font-size: 18px;
+      }
+    }
+    .contextContainer {
+      background-size: contain;
+      padding: 2rem;
+    }
+    .details {
+      display: block;
+      /* display: flex;
+      flex-wrap: wrap;
+      gap: 15px; */
+    }
+    .text {
+      /* font-size: 10px; */
+    }
+  }
+  

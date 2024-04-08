@@ -18,3 +18,27 @@
     font-size: 3vw;
     font-family: "Abril Fatface";
 }
+
+@media screen and (width<=480px) {
+    .container{
+        padding-top: 15vh;
+    }
+    
+    .container > h1{
+        font-family: "Bangers";
+        text-align: center;
+    }
+    
+    .sponsorContainer{
+        min-height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sponsorContainer > h1{
+        text-align: center;
+        font-size: 8vw;
+        font-family: "Abril Fatface";
+    }
+    
+}

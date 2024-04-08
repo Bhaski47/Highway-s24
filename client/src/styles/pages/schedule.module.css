@@ -1,0 +1,74 @@
+.days {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.details {
+  display: flex;
+  justify-content: center;
+}
+.edu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+.eduList {
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+}
+.edu::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #f23f91;
+  top: 0;
+  left: -30px;
+  height: 80%;
+}
+.eduList::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 4px;
+  left: -36px;
+  animation: pointer 1.3s infinite;
+}
+
+.eduList:nth-child(1)::before {
+  animation-delay: 0.5s;
+}
+
+.eduList:nth-child(2)::before {
+  animation-delay: 1s;
+}
+
+.eduList:nth-child(3)::before {
+  animation-delay: 1.5s;
+}
+.eduList:nth-child(4)::before {
+  animation-delay: 2s;
+}
+.eduList:nth-child(5)::before {
+  animation-delay: 2.5s;
+}
+
+@keyframes pointer {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

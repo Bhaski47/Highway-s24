@@ -1,5 +1,6 @@
 @media screen and (width < 480px) {
     .container{
+        font-family: "Poppins";
         padding: 15vh 0;
         margin: auto;
         width: 80vw;
@@ -37,6 +38,7 @@
 @media screen and (width >= 481px) and (width <=1023px) {
     .container{
         padding: 20vh 0;
+        font-family: "Poppins";
         margin: auto;
         width: 80vw;
     }
@@ -72,6 +74,7 @@
 }
 @media screen and (width >= 1024px) {
     .container{
+        font-family: "Poppins";
         padding: 20vh 0;
         margin: auto;
         width: 80vw;

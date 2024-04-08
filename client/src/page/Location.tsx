@@ -4,7 +4,7 @@ import Header from "../components/common/Header";
 const Location = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Location | Technoways";
+    document.title = "Location | Highways";
   });
   return (
     <>

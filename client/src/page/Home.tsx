@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 import styles from "../styles/pages/home.module.css";
 import Header from "../components/common/Header";
 import { NavLink } from "react-router-dom";
 import About from "./About";
 import Footer from "../components/common/Footer";
+import Sponsors from "./Sponsors";
+import Location from "./Location";
+import Glimpse from "./Glimpse";
 const Home:React.FC=()=> {
+  useEffect(()=>{
+    document.title = "Home | Highways";
+  },[])
   return (
     <>
       <Header />
@@ -14,7 +20,7 @@ const Home:React.FC=()=> {
         <div className={styles.content}>
           <p className={styles.rev}>NATIONAL LEVEL CULTURAL FEST</p>
           <h1 className={styles.tech}>
-            <span>H</span>
+            {/* <span>H</span>
             <span>I</span>
             <span>G</span>
             <span>H</span>
@@ -24,7 +30,8 @@ const Home:React.FC=()=> {
             <span>S</span>
             <span>'</span>
             <span> 2</span>
-            <span>4</span>
+            <span>4</span> */}
+            HIGHWAYS' 24
           </h1>
           <p className={styles.time}>MAY 3 & 4,2024</p>
           <br />
@@ -57,6 +64,9 @@ const Home:React.FC=()=> {
         </div>
       </div>
       <About/>
+      <Glimpse/>
+      <Sponsors/>
+      <Location/>
       <Footer/>
     </>
   );

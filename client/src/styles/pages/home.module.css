@@ -1,420 +1,415 @@
+.tech {
+  background-image: url("../../assets/images/textImage.png");
+  background-repeat: repeat;
+  font-family: "Bangers", system-ui;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #61F7CA;
+  -webkit-text-fill-color: transparent;
+  font-size: 50vw;
+  text-align: center;
+  font-weight: bold;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+}
+.rev {
+  width: 100%;
+  text-align: start;
+  /* margin-bottom: 1.5%; */
+}
+
+/* .content h1 {
+  font-family: "Bangers", system-ui;
+} */
+
+.time {
+  cursor: default;
+  width: 95%;
+  text-align: end;
+}
+
+.timer {
+  cursor: default;
+  font-family: RebelCaps;
+}
+
+.rev {
+  cursor: default;
+  width: 100%;
+  text-align: start;
+  /* margin-bottom: 1.5%; */
+}
 @media screen and (width <= 600px) {
-    .rev {
-      letter-spacing: 1vw;
-      font-size: 10px;
-    }
-  
-    .content > h1 {
-      font-size: 7vw;
-    }
-    .tech {
-      padding: 1vh 0;
-      letter-spacing: 2vw;
-    }
-  
-    .time {
-      letter-spacing: 1vw;
-      font-size: 10px;
-    }
-  
-    /* .eventInfo {
+  .rev {
+    letter-spacing: 1vw;
+    font-size: 10px;
+  }
+
+  .content > h1 {
+    font-size: 13vw;
+  }
+  .tech {
+    padding: 1vh 0;
+    letter-spacing: 2vw;
+  }
+
+  .time {
+    letter-spacing: 1vw;
+    font-size: 10px;
+  }
+
+  /* .eventInfo {
       font-family: "Abril Fatface", serif;
       margin-top: 5%;
       display: flex;
       flex-direction: row;
       width: 100%;
     } */
-  
-    .eventInfo {
-      font-family: "Abril Fatface", serif;
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      margin-top: 5%;
-      align-items: center;
-      width: 100%;
-      column-gap: 1px;
-      row-gap: 20px;
-      flex-wrap: wrap;
-    }
-  
-    .title {
-      padding: 1rem 1rem;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 2.5px;
-      font-weight: 500;
-      color: #000;
-      background-color: #fff;
-      backdrop-filter: blur(10px);
-      border: none;
-      border-radius: 5px;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease 0s;
-      cursor: pointer;
-      outline: none;
-      border: 2px solid #fff;
-    }
-  
-    .title:hover {
-      /* background-color: #c00020; */
-      /* border: 2px solid #eb0029; */
-      /* box-shadow: 0px 0px 40px 0px #eb0029; */
-      color: #000;
-      background-color: #fff;
-      /* transform: translateY(-7px); */
-    }
-    .titleHighlight {
-      padding: 1rem 1rem;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 2.5px;
-      font-weight: 500;
-      color: #fff;
-      background-color: #000;
-      backdrop-filter: blur(10px);
-      border: none;
-      border-radius: 5px;
-      transition: all 0.3s ease 0s;
-      cursor: pointer;
-      outline: none;
-      border: 2px solid #fff;
-      /* box-shadow: 0px 0px 40px 0px #eb0029; */
-    }
-  
-    .titleHighlight:hover {
-      /* background-color: #c00020; */
-      /* border: 2px solid #eb0029; */
-      /* box-shadow: 0px 0px 40px 0px #eb0029; */
-      color: #000;
-      background-color: #fff;
-      /* transform: translateY(-7px); */
-    }
-  
-    /* .titleHighlight:active {
+
+  .eventInfo {
+    font-family: "Abril Fatface", serif;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
+    column-gap: 1px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .title {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #fff;
+  }
+
+  .title:hover {
+    /* background-color: #c00020; */
+    /* border: 2px solid #eb0029; */
+    /* box-shadow: 0px 0px 40px 0px #eb0029; */
+    color: #000;
+    background-color: #fff;
+    /* transform: translateY(-7px); */
+  }
+  .titleHighlight {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #fff;
+    /* box-shadow: 0px 0px 40px 0px #eb0029; */
+  }
+
+  .titleHighlight:hover {
+    /* background-color: #c00020; */
+    /* border: 2px solid #eb0029; */
+    /* box-shadow: 0px 0px 40px 0px #eb0029; */
+    color: #000;
+    background-color: #fff;
+    /* transform: translateY(-7px); */
+  }
+
+  /* .titleHighlight:active {
       transform: translateY(-1px);
     } */
+}
+
+@media screen and (width >= 1024px) {
+  .eventInfo {
+    font-family: "Abril Fatface", serif;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    min-width: 20%;
+    column-gap: 30px;
+    row-gap: 30px;
+    flex-wrap: wrap;
   }
-  
-  .time {
-    width: 95%;
-    text-align: end;
-  }
-  
-  .timer {
-    font-family: RebelCaps;
-  }
-  
-  .rev {
-    width: 100%;
-    text-align: start;
-    /* margin-bottom: 1.5%; */
-  }
-  
-  .content h1 {
-    font-family: "Bangers",system-ui;
-  }
-  
-  .time {
+  .tech {
     cursor: default;
-    width: 95%;
-    text-align: end;
+    position: relative;
+    top: 0rem;
+    letter-spacing: 15px;
+    font-size: 7vw;
+    display: inline-block;
   }
-  
-  .timer {
-    cursor: default;
-    font-family: RebelCaps;
+
+  .title {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #fff;
   }
-  
-  .rev {
-    cursor: default;
-    width: 100%;
-    text-align: start;
-    /* margin-bottom: 1.5%; */
+  .title:hover {
+    background-color: #000;
+    border: 2px solid #fff;
+    /* box-shadow: 0px 0px 40px 0px #fff; */
+    color: #fff;
+    /* transform: translateY(-7px); */
   }
-  
-  .content h1 {
-    font-family: RebelCaps;
+  .titleHighlight {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    /* border: 2px solid #61f7ca; */
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #fff;
   }
-  @media screen and (width >= 1024px) {
-    .eventInfo {
-      font-family: "Abril Fatface", serif;
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 5%;
-      min-width: 20%;
-      column-gap: 30px;
-      row-gap: 30px;
-      flex-wrap: wrap;
-    }
-    .tech {
-      cursor: default;
-      position: relative;
-      top: 0rem;
-      letter-spacing: 15px;
-      font-size: 7vw;
-      display: inline-block;
-    }
-  
-    .title {
-      padding: 1rem 1rem;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 2.5px;
-      font-weight: 500;
-      color: #000;
-      background-color: #fff;
-      backdrop-filter: blur(10px);
-      border: none;
-      border-radius: 5px;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease 0s;
-      cursor: pointer;
-      outline: none;
-      border: 2px solid #fff;
-    }
-    .title:hover {
-      background-color: #000;
-      border: 2px solid #fff;
-      /* box-shadow: 0px 0px 40px 0px #fff; */
-      color: #fff;
-      /* transform: translateY(-7px); */
-    }
-    .titleHighlight {
-      padding: 1rem 2rem;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 2.5px;
-      font-weight: 500;
-      backdrop-filter: blur(10px);
-      border: none;
-      border-radius: 5px;
-      transition: all 0.3s ease 0s;
-      cursor: pointer;
-      outline: none;
-      /* border: 2px solid #61f7ca; */
-      color: #fff;
-      background-color: #000;
-      border: 2px solid #fff;
-    }
-    
+
   .content > h1 {
-    font-size: 5vw;
+    font-size: 10vw;
   }
-  
-  
+
   .titleHighlight:hover {
     /* box-shadow: 0px 0px 40px 0px #1af3b2; */
     background-color: #fff;
     color: #000;
   }
-  
+
   .titleHighlight:active {
     transform: translateY(-1px);
   }
-  
+}
 
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .eventInfo {
+    font-family: "Abril Fatface", serif;
+    margin-top: 5%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    column-gap: 1rem;
+    flex-wrap: wrap;
   }
-  
-  @media screen and (min-width: 601px) and (max-width: 1024px) {
-    .eventInfo {
-      font-family: "Abril Fatface", serif;
-      margin-top: 5%;
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 60%;
-      column-gap: 1rem;
-      flex-wrap: wrap;
-    }
-    
-  .content > h1 {
-    font-family: "Bangers",system-ui;
+
+  .tech {
+    font-family: "Bangers", system-ui;
     font-size: 5vw;
-  }
-    .tech {
-      position: relative;
-      top: 0rem;
-      letter-spacing: 15px;
-      font-size: 7vw;
-      display: inline-block;
-    }
-    .title {
-      padding: 1rem 1rem;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 2.5px;
-      font-weight: 500;
-      color: #000;
-      background-color: #fff;
-      backdrop-filter: blur(10px);
-      border: none;
-      border-radius: 5px;
-      /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); */
-      transition: all 0.3s ease 0s;
-      cursor: pointer;
-      outline: none;
-      border: 2px solid #fff;
-    }
-  
-    .title:hover {
-      /* background-color: #c00020; */
-      background-color: #000;
-      border: 2px solid #fff;
-      color: #fff;
-    }
-  
-    .title:active {
-      transform: translateY(-1px);
-    }
-    .titleHighlight {
-      padding: 1rem 1rem;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 2.5px;
-      font-weight: 500;
-      color: #fff;
-      background-color: #000;
-      border: 2px solid #fff;
-      backdrop-filter: blur(10px);
-      border-radius: 5px;
-      transition: all 0.3s ease 0s;
-      cursor: pointer;
-      outline: none;
-      /* box-shadow: 0px 0px 40px 0px #eb0029; */
-    }
-  
-    .titleHighlight:hover {
-      background-color: #fff;
-      /* box-shadow: 0px 0px 40px 0px #eb0029; */
-      color: #000;
-    }
-  
-    .titleHighlight:active {
-      transform: translateY(-1px);
-    }
-  }
-  
-  @keyframes drop {
-    0% {
-      top: -40rem;
-    }
-  
-    80% {
-      top: 0rem;
-    }
-  
-    90% {
-      top: -0.5rem;
-    }
-  
-    100% {
-      top: 0rem;
-    }
-  }
-  
-  .home {
-    font-family: "Bangers",system-ui;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    padding-top: 30px;
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  
-  .content > h1 > span:nth-child(1) {
-    animation: drop 800ms ease-in;
-    position: relative;
-    top: 0px;
-  }
-  
-  .content > h1 > span:nth-child(2) {
-    animation: drop 900ms ease-in;
-    position: relative;
-    top: 0px;
-  }
-  
-  .content > h1 > span:nth-child(3) {
-    animation: drop 1000ms ease-in;
-    position: relative;
-    top: 0px;
-  }
-  
-  .content > h1 > span:nth-child(4) {
-    animation: drop 1100ms ease-in;
-    position: relative;
-    top: 0px;
-  }
-  
-  .content > h1 > span:nth-child(5) {
-    animation: drop 1200ms ease-in;
-    position: relative;
-    top: 0px;
-  }
-  
-  .content > h1 > span:nth-child(6) {
-    animation: drop 1300ms ease-in;
-    position: relative;
-    top: 0px;
-  }
-  
-  .content > h1 > span:nth-child(7) {
-    animation: drop 1400ms ease-in;
-    position: relative;
-    top: 0px;
-  }
-  
-  .content > h1 > span:nth-child(8) {
-    animation: drop 1500ms ease-in;
-    position: relative;
-    top: 0px;
-  }
-  
-  .content > h1 > span:nth-child(9) {
-    animation: drop 1600ms ease-in;
-    position: relative;
-    top: 0px;
-  }
-  
-  .content > h1 > span:nth-child(10) {
-    animation: drop 1700ms ease-in;
-    position: relative;
-    top: 0px;
-  }
-  .content > h1 > span:nth-child(11) {
-    animation: drop 1800ms ease-in;
-    position: relative;
-    top: 0px;
-  }
-  
-  .content > p {
     position: relative;
     top: 0rem;
-    font-weight: bold;
+    letter-spacing: 15px;
+    font-size: 13vw;
+    display: inline-block;
   }
-  
-  .content > p:nth-child(3) {
-    animation: drop 800ms ease-in;
+  .title {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 5px;
+    /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); */
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #fff;
   }
-  
-  .content > p:nth-child(5) {
-    animation: drop 700ms ease-in;
+
+  .title:hover {
+    /* background-color: #c00020; */
+    background-color: #000;
+    border: 2px solid #fff;
+    color: #fff;
   }
-  
-  .content > p:nth-child(6) {
-    animation: drop 600ms ease-in;
+
+  .title:active {
+    transform: translateY(-1px);
   }
-  
+  .titleHighlight {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #fff;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    /* box-shadow: 0px 0px 40px 0px #eb0029; */
+  }
+
+  .titleHighlight:hover {
+    background-color: #fff;
+    /* box-shadow: 0px 0px 40px 0px #eb0029; */
+    color: #000;
+  }
+
+  .titleHighlight:active {
+    transform: translateY(-1px);
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: -40rem;
+  }
+
+  80% {
+    top: 0rem;
+  }
+
+  90% {
+    top: -0.5rem;
+  }
+
+  100% {
+    top: 0rem;
+  }
+}
+
+.home {
+  font-family: "Bangers", system-ui;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/* 
+.content > h1 > span:nth-child(1) {
+  animation: drop 800ms ease-in;
+  position: relative;
+  top: 0px;
+}
+
+.content > h1 > span:nth-child(2) {
+  animation: drop 900ms ease-in;
+  position: relative;
+  top: 0px;
+}
+
+.content > h1 > span:nth-child(3) {
+  animation: drop 1000ms ease-in;
+  position: relative;
+  top: 0px;
+}
+
+.content > h1 > span:nth-child(4) {
+  animation: drop 1100ms ease-in;
+  position: relative;
+  top: 0px;
+}
+
+.content > h1 > span:nth-child(5) {
+  animation: drop 1200ms ease-in;
+  position: relative;
+  top: 0px;
+}
+
+.content > h1 > span:nth-child(6) {
+  animation: drop 1300ms ease-in;
+  position: relative;
+  top: 0px;
+}
+
+.content > h1 > span:nth-child(7) {
+  animation: drop 1400ms ease-in;
+  position: relative;
+  top: 0px;
+}
+
+.content > h1 > span:nth-child(8) {
+  animation: drop 1500ms ease-in;
+  position: relative;
+  top: 0px;
+}
+
+.content > h1 > span:nth-child(9) {
+  animation: drop 1600ms ease-in;
+  position: relative;
+  top: 0px;
+}
+
+.content > h1 > span:nth-child(10) {
+  animation: drop 1700ms ease-in;
+  position: relative;
+  top: 0px;
+}
+.content > h1 > span:nth-child(11) {
+  animation: drop 1800ms ease-in;
+  position: relative;
+  top: 0px;
+}
+
+.content > p {
+  position: relative;
+  top: 0rem;
+  font-weight: bold;
+}
+
+.content > p:nth-child(3) {
+  animation: drop 800ms ease-in;
+}
+
+.content > p:nth-child(5) {
+  animation: drop 700ms ease-in;
+}
+
+.content > p:nth-child(6) {
+  animation: drop 600ms ease-in;
+} */

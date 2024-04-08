@@ -2,16 +2,17 @@
 import styles from "../styles/pages/about.module.css";
 import ark1 from "../assets/images/ark1.jpg";
 import Header from "../components/common/Header";
-import Footer from "../components/common/Footer";
+import { useEffect } from "react";
 const About: React.FC = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  //   document.title = "About | Highways";
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.title = "About | Highways";
+  }, []);
   return (
     <>
     <Header/>
     <div className={styles.container}>
+      <h1 style={{fontFamily:"Bangers",textAlign:"center",marginBottom:"5%"}}>About</h1>
       <div className={styles.imgContainer}>
         <img src={ark1} alt="ark1" className={styles.img} />
         <div className={styles.aboutInfo}>

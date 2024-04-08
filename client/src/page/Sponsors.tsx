@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import Header from "../components/common/Header";
 import styles from "../styles/pages/sponsors.module.css";
 
 const Sponsors:React.FC=()=>{
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+        document.title = "Sponsors | Highways";
+    },[])
     return(
         <>
         <Header/>
