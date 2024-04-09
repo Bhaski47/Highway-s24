@@ -5,6 +5,7 @@
   font-family: "Bangers", serif;
   position: fixed;
   width: 100%;
+  letter-spacing: 0.2vw;
   display: flex;
   justify-content: space-between;
   backdrop-filter: blur(10px);
@@ -19,7 +20,7 @@
 }
 
 .active {
-  color: red;
+  color: #61F7CA;
 }
 .inactive {
   color: white;
@@ -104,7 +105,7 @@
       transform: translateY(-5px);
       text-decoration: none;
       display: inline-block;
-      color: #eb0029;
+      color: #61F7CA;
     }
   }
 }

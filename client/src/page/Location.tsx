@@ -21,7 +21,7 @@ const Location = () => {
             <div className={styles.locationDetails}>
               <h1>Sri Venkateswara College of Engineering</h1>
               <p>
-                Post Bag No.1,Pennalur Village Chennai - Bangaluru High Road
+                Post Bag No.1,Pennalur Village <br />Chennai - Bangaluru High Road <br />
                 Sriperumbudur Tk, Tamil Nadu 602117
               </p>
               <br />
@@ -36,18 +36,6 @@ const Location = () => {
                   }
                 >
                   Enroute
-                </button>
-                <button
-                  className={styles.titleHighlight}
-                  style={{ textDecoration: "none", color: "white" }}
-                  onClick={() =>
-                    window.open(
-                      "https://svce-bus-tracking-v2.vercel.app/",
-                      "_blank"
-                    )
-                  }
-                >
-                  Live Tracking
                 </button>
               </div>
             </div>

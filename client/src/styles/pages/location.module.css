@@ -3,17 +3,20 @@
     min-height: 85vh;
     padding-top: 10rem;
     margin: auto;
-    font-family: "Bangers", sans-serif;
   }
   
   .heading {
     cursor: default;
+    font-size:2vw;
     padding-bottom: 3rem;
-    font-size: 50px;
+    letter-spacing: 0.2vw;
+    font-family: "Bangers", system-ui;
   }
   
   .flexContainer {
     display: flex;
+    text-align: start;
+    font-family: "Poppins";
     align-items: center;
     justify-content: center;
     border: 1px solid #51A0DA;
@@ -43,12 +46,11 @@
   }
   
   .locationDetails > h1 {
-    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     font-size: 40px;
   }
   .locationDetails > p {
     padding: 1rem 0 1rem 0;
-    font-family: "DM Sans";
     font-size: 20px;
   }
   
@@ -78,10 +80,10 @@
   } */
   .routeButton {
     padding: 1rem 1rem;
-    font-size: 1rem;
+    font-size: 0.8vw;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    font-weight: 500;
+    font-weight: 600;
     color: #000;
     background-color: #fff;
     backdrop-filter: blur(10px);
@@ -99,13 +101,6 @@
     /* box-shadow: 0px 0px 40px 0px #fff; */
     color: #fff;
     /* transform: translateY(-7px); */
-  }
-  .buttonContainer {
-    /* background-color: red; */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 0 4vw;
   }
   .titleHighlight {
     padding: 1rem 2rem;

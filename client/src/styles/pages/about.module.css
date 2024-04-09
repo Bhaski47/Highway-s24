@@ -96,6 +96,7 @@
     .aboutInfo{
         min-width: 40%;
         display: grid;
+        place-items: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         text-align: center;

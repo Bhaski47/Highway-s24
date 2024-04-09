@@ -5,7 +5,7 @@ import Slider3 from "../components/Slider3";
 const Glimpse: React.FC = () => {
   return (
     <div className={styles.flexContainer}>
-      <h1 style={{fontFamily:"Bangers",textAlign:"center",marginBottom:"5%"}}>Glimpse</h1>
+      <h1 style={{fontFamily:"Bangers",textAlign:"center",marginBottom:"5%",letterSpacing: "0.2vw",fontSize:"2vw"}}>Glimpse</h1>
         <Slider1/>
         <Slider2/>
         <Slider3/>

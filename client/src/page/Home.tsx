@@ -33,7 +33,7 @@ const Home:React.FC=()=> {
             <span>4</span> */}
             HIGHWAYS' 24
           </h1>
-          <p className={styles.time}>MAY 3 & 4,2024</p>
+          <p className={styles.time}>MAY 7 & 8,2024</p>
           <br />
           {/* <div style={{ paddingTop: "8%" }}></div> */}
           {/* <p className={styles.timer}><Timer /></p> */}

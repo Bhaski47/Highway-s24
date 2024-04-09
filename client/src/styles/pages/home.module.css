@@ -4,7 +4,7 @@
   font-family: "Bangers", system-ui;
   background-position: center;
   -webkit-background-clip: text;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #61F7CA;
   -webkit-text-fill-color: transparent;
   font-size: 50vw;
@@ -14,7 +14,10 @@
   -webkit-font-smoothing: antialiased;
 }
 .rev {
-  width: 100%;
+  cursor: default;
+  font-size: larger;
+  width: 96%;
+  letter-spacing: 0.2vw;
   text-align: start;
   /* margin-bottom: 1.5%; */
 }
@@ -25,6 +28,8 @@
 
 .time {
   cursor: default;
+  font-size: larger;
+  letter-spacing: 0.2vw;
   width: 95%;
   text-align: end;
 }
@@ -32,13 +37,6 @@
 .timer {
   cursor: default;
   font-family: RebelCaps;
-}
-
-.rev {
-  cursor: default;
-  width: 100%;
-  text-align: start;
-  /* margin-bottom: 1.5%; */
 }
 @media screen and (width <= 600px) {
   .rev {

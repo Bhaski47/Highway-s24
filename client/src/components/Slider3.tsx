@@ -37,9 +37,13 @@ const Slider2: React.FC = () => {
       drag: "free",
       focus: "center",
       perPage: perPage,
+      pauseOnHover:false,
       pagination: false,
       arrows:false,
       interval: 2000,
+      autoScroll:{
+        pauseOnHover:false
+      }
     });
     splide.mount({AutoScroll});
     return () => {
