@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import styles from "../styles/pages/home.module.css";
 import Header from "../components/common/Header";
 import { NavLink } from "react-router-dom";

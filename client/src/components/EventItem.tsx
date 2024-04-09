@@ -1,6 +1,6 @@
 import styles from "../styles/components/evenitem.module.css";
 // import arrow from "../assets/images/icons/arrow.png";
-import logo from "../assets/images/techLogo.png";
+// import logo from "../assets/images/techLogo.png";
 import { Link } from "react-router-dom";
 const EventItem: React.FC<{
   image: string;

@@ -11,7 +11,7 @@ const Sponsors:React.FC=()=>{
         <>
         <Header/>
         <div className={styles.container}>
-            <h1>OUR SPONSORS</h1>
+            <h1 className={styles.heading}>OUR SPONSORS</h1>
             <div className={styles.sponsorContainer}>
                 <h1>COMING SOON !</h1>
             </div>

@@ -1,9 +1,15 @@
 .container{
     padding-top: 15vh;
+    padding-bottom: 8vh;
 }
-
+.heading{
+    font-family: "Bangers";
+        text-align: center;
+        margin-bottom: 5%;
+        letter-spacing: 0.2vw;
+        font-size: 3rem;
+}
 .container > h1{
-    font-size:2vw;
     font-family: "Bangers";
     letter-spacing: 0.2vw;
     text-align: center;
@@ -22,6 +28,13 @@
 }
 
 @media screen and (width<=480px) {
+    .heading{
+        font-family: "Bangers";
+            text-align: center;
+            margin-bottom: 5%;
+            letter-spacing: 0.2vw;
+            font-size: 2rem;
+    }
     .container{
         padding-top: 15vh;
     }

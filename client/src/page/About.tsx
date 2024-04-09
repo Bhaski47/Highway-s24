@@ -13,13 +13,7 @@ const About: React.FC = () => {
       <Header />
       <div className={styles.container}>
         <h1
-          style={{
-            fontFamily: "Bangers",
-            textAlign: "center",
-            marginBottom: "5%",
-            letterSpacing: "0.2vw",
-            fontSize:"2vw"
-          }}
+          className={styles.heading}
         >
           About
         </h1>

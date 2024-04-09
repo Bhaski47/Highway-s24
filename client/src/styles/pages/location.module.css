@@ -1,16 +1,16 @@
-
+.heading{
+  font-family: "Bangers", system-ui;
+  cursor: default;
+  padding-bottom: 3rem;
+            text-align: center;
+            /* margin-bottom: 5%; */
+            letter-spacing: 0.2vw;
+            font-size: 3rem;
+    }
 .location {
     min-height: 85vh;
     padding-top: 10rem;
     margin: auto;
-  }
-  
-  .heading {
-    cursor: default;
-    font-size:2vw;
-    padding-bottom: 3rem;
-    letter-spacing: 0.2vw;
-    font-family: "Bangers", system-ui;
   }
   
   .flexContainer {
@@ -130,6 +130,13 @@
   }
   
   @media screen and (width < 800px) {
+    .heading{
+      font-family: "Bangers";
+          text-align: center;
+          margin-bottom: 5%;
+          letter-spacing: 0.2vw;
+          font-size: 2rem;
+  }
     .routeButton {
         padding: 1rem 1rem;
         font-size: 1rem;
@@ -157,7 +164,8 @@
         /* transform: translateY(-7px); */
       }
     .flexContainer {
-      display: block;
+      display: flex;
+      flex-direction: column;
       margin-bottom: 4rem;
       width: 90%;
     }
@@ -169,6 +177,12 @@
       flex-direction: column;
       /* justify-content: center; */
       gap:4vw 0vw
+    }
+    .locationDetails > h1{
+      font-size: 2rem;
+    }
+    .locationDetails > p{
+      font-size: 1rem;
     }
     .locationDetails {
       margin: 3rem 1rem 0 1rem;
