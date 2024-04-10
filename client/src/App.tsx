@@ -10,6 +10,7 @@ import Events from './page/Events';
 import EventSection from './page/EventSection';
 import EventInfo from './page/EventInfo';
 import Schedule from './page/Schedule';
+import TermsAndConditions from './page/Terms';
 
 const router = createBrowserRouter(
   [
@@ -67,6 +68,13 @@ const router = createBrowserRouter(
       path: "/schedule",
       element: <>
       <Schedule />
+      <Footer/>
+      </>,
+    },
+    {
+      path: "/termsandconditions",
+      element: <>
+      <TermsAndConditions />
       <Footer/>
       </>,
     },

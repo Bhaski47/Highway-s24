@@ -8,6 +8,7 @@ import Footer from "../components/common/Footer";
 import Sponsors from "./Sponsors";
 import Location from "./Location";
 import Glimpse from "./Glimpse";
+import CelebrityWalkin from "./CelebrityWalkin";
 const Home:React.FC=()=> {
   useEffect(()=>{
     document.title = "Home | Highways";
@@ -65,6 +66,7 @@ const Home:React.FC=()=> {
       </div>
       <About/>
       <Glimpse/>
+      <CelebrityWalkin/>
       <Sponsors/>
       <Location/>
       <Footer/>
