@@ -224,6 +224,7 @@
   }
 
   .tech {
+    -webkit-text-stroke-width: 2px;
     font-family: "Bangers", system-ui;
     font-size: 5vw;
     position: relative;
