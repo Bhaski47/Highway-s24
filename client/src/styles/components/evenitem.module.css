@@ -54,7 +54,7 @@
     font-family: "Bangers", system-ui;
     background-position: center;
     -webkit-background-clip: text;
-    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-width: 0.01px;
     -webkit-text-stroke-color: #61F7CA;
     -webkit-text-fill-color: transparent;
     font-size: 2vw;

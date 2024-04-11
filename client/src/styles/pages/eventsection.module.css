@@ -1,64 +1,73 @@
 .event {
-    font-family: "Bangers", system-ui;
-    position: relative;
-    padding: 8rem 0 0 0;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .blurBackground {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: inherit;
-    z-index: 0;
-    filter: blur(15px);
-  }
-  
-  .whiteHeader {
-    color: white;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 50px;
-    position: relative;
-    z-index: 999;
-  }
-  
-  .heading {
-    /* color: #4d291a; */
-    cursor: default;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 50px;
-    z-index: 999;
-  }
-  
+  font-family: "Bangers", system-ui;
+  position: relative;
+  padding: 8rem 0 0 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+.heading {
+  cursor: default;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 50px;
+  z-index: 999;
+}
+
+.toggle{
+  margin: 2rem 0;
+  position: relative;
+  display: flex;
+  background-color: aliceblue;
+  width: 16vw;
+  border-radius: 1000px;
+  align-items: center;
+  justify-content: space-around;
+  height: 6vh;
+}
+
+.toggle_overlay{
+  left: 5px;
+  height: 5vh;
+  width: 7.5vw;
+  border-radius: 1000px;
+  background-color: black;
+  position: absolute;
+  transition: all ease-in-out 300ms;
+}
+
+.day{
+  color: white;
+  mix-blend-mode: difference;
+  font-size: 1.5vw;
+  z-index: 2;
+  width: 7.5vw;
+  height: 5vh;
+  align-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.departmentGrid {
+  margin: 0 2rem 0rem 2rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: red; */
+  max-width: 80%;
+  margin: auto auto;
+  gap: 80px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+@media screen and (max-width: 565px) {
   .departmentGrid {
-    margin: 0 2rem 0rem 2rem;
-    padding-bottom: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* background-color: red; */
-    max-width: 80%;
-    margin: auto auto;
-    gap: 80px;
     font-family: "Space Grotesk", sans-serif;
+    gap: 30px;
+    max-width: 100%;
   }
-  
-  @media screen and (max-width: 565px) {
-    .departmentGrid {
-      font-family: "Space Grotesk", sans-serif;
-      gap: 30px;
-      max-width: 100%;
-    }
-  }
-  
+}
