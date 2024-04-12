@@ -16,7 +16,6 @@ const Slider2: React.FC = () => {
   useEffect(() => {
     const updatePerPage = () => {
       const screenWidth = window.innerWidth;
-      console.log(screenWidth)
       if (screenWidth >= 1200) {
         setPerPage(5);
       } else if (screenWidth >= 768) {

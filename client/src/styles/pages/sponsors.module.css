@@ -1,59 +1,61 @@
-.container{
-    padding-top: 8rem;
-    padding-bottom: 8vh;
+.container {
+  padding-top: 8rem;
+  padding-bottom: 8vh;
+  position: relative;
+  z-index: 948;
+  background-color: #0c0c0c;
 }
-.heading{
-    font-family: "Bangers";
-        text-align: center;
-        margin-bottom: 5%;
-        letter-spacing: 0.2vw;
-        font-size: 3rem;
+.heading {
+  font-family: "Bangers";
+  text-align: center;
+  margin-bottom: 5%;
+  letter-spacing: 0.2vw;
+  font-size: 3rem;
 }
-.container > h1{
-    font-family: "Bangers";
-    letter-spacing: 0.2vw;
-    text-align: center;
+.container > h1 {
+  font-family: "Bangers";
+  letter-spacing: 0.2vw;
+  text-align: center;
 }
 
-.sponsorContainer{
+.sponsorContainer {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsorContainer > h1 {
+  text-align: center;
+  font-size: 3vw;
+  font-family: "Abril Fatface";
+}
+
+@media screen and (width<=480px) {
+  .heading {
+    font-family: "Bangers";
+    text-align: center;
+    margin-bottom: 5%;
+    letter-spacing: 0.2vw;
+    font-size: 2rem;
+  }
+  .container {
+    padding-top: 15vh;
+  }
+
+  .container > h1 {
+    font-family: "Bangers";
+    text-align: center;
+  }
+
+  .sponsorContainer {
     min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.sponsorContainer > h1{
+  }
+  .sponsorContainer > h1 {
     text-align: center;
-    font-size: 3vw;
+    font-size: 8vw;
     font-family: "Abril Fatface";
-}
-
-@media screen and (width<=480px) {
-    .heading{
-        font-family: "Bangers";
-            text-align: center;
-            margin-bottom: 5%;
-            letter-spacing: 0.2vw;
-            font-size: 2rem;
-    }
-    .container{
-        padding-top: 15vh;
-    }
-    
-    .container > h1{
-        font-family: "Bangers";
-        text-align: center;
-    }
-    
-    .sponsorContainer{
-        min-height: 50vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .sponsorContainer > h1{
-        text-align: center;
-        font-size: 8vw;
-        font-family: "Abril Fatface";
-    }
-    
+  }
 }

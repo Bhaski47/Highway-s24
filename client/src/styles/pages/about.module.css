@@ -1,3 +1,8 @@
+.container{
+  overflow: hidden;
+  position: relative;
+  z-index: 199;
+}
 @media screen and (width < 480px) {
   .heading {
     font-family: "Bangers";

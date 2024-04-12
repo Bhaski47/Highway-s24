@@ -1,3 +1,7 @@
+.home{
+  position: relative;
+  z-index: 944;
+}
 .tech {
   background-image: url("../../assets/images/textImage.png");
   background-repeat: repeat;
