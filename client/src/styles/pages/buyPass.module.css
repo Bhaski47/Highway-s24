@@ -1,0 +1,80 @@
+.buyPass {
+  font-family: "Bangers", serif;
+  padding: 7rem 0 3rem 0;
+  width: 80%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.passContainer {
+  display: flex;
+}
+
+.passImage {
+  width: 30rem;
+}
+
+.details {
+  padding: 5rem;
+  text-align: left;
+}
+
+.highwaysText {
+  background-image: url("../../assets/images/textImage.png");
+  /* background-repeat: repeat; */
+  font-family: "Bangers", system-ui;
+  /* background-position:center; */
+  background-size: cover;
+  background-clip: text;
+  -webkit-text-stroke-width: 0.01px;
+  -webkit-text-stroke-color: #61f7ca;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+  font-size: 5vw;
+}
+
+.orginal_price {
+  font-family: "Poppins";
+}
+
+.current_price {
+  font-family: "Poppins";
+}
+.description {
+  font-family: "Poppins";
+}
+.buyNow {
+  padding: 1rem 2rem;
+  font-size: 1.5vw;
+  border: 1px rgba(255, 255, 255, 0.505) solid;
+  width: max-content;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+@media screen and (width<1200px) {
+  .buyPass {
+    width: 80%;
+  }
+  .passImage {
+    width: 20rem;
+  }
+  .passContainer {
+    flex-direction: column;
+  }
+  .details {
+    padding: 2rem 0;
+    text-align: left;
+  }
+  .highwaysText {
+    font-size: 15vw;
+  }
+  .buyNow{
+    font-size: 5vw;
+  }
+}

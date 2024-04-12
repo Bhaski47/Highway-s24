@@ -1,3 +1,4 @@
+
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from "./page/Home";
 import './App.css';
@@ -20,64 +21,88 @@ const router = createBrowserRouter(
       path:"/about",
       element:
       <>
-      <About/>
-      <Footer/>
+        <About />
+        <Footer />
       </>
-    },
-    {
-      path:"/sponsors",
-      element:
+    ),
+  },
+  {
+    path: "/sponsors",
+    element: (
       <>
-      <Sponsors/>
-      <Footer/>
+        <Sponsors />
+        <Footer />
       </>
-    },
-    {
-      path:"/location",
-      element:
+    ),
+  },
+  {
+    path: "/location",
+    element: (
       <>
-      <Location/>
-      <Footer/>
+        <Location />
+        <Footer />
       </>
-    },
-    {
-      path: "/events",
-      element: (
-        <>
-          <EventSection />
-          <Footer />
-        </>
-      ),
-    },
-    {
-      path: "/events/:events",
-      element: (
-        <>
-          <Events />
-          <Footer />
-        </>
-      ),
-    },
-    {
-      path: "/events/:events/:eventId",
-      element: <EventInfo />,
-    },
-    {
-      path: "/schedule",
-      element: <>
-      <Schedule />
-      <Footer/>
-      </>,
-    },
-    {
-      path: "/termsandconditions",
-      element: <>
-      <TermsAndConditions />
-      <Footer/>
-      </>,
-    },
-  ]
-)
+    ),
+  },
+  {
+    path: "/events",
+    element: (
+      <>
+        <EventSection />
+        <Footer />
+      </>
+    ),
+  },
+  // {
+  //   path: "/events/:events",
+  //   element: (
+  //     <>
+  //       <Events />
+  //       <Footer />
+  //     </>
+  //   ),
+  // },
+  {
+    path: "/events/:eventId",
+    element: <EventInfo />,
+  },
+  {
+    path: "/schedule",
+    element: (
+      <>
+        <Schedule />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/getPasses",
+    element: (
+      <>
+        <GetPasses />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/buyPass/:pass",
+    element: (
+      <>
+        <BuyPass />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/termsandconditions",
+    element: (
+      <>
+        <TermsAndConditions />
+        <Footer />
+      </>
+    ),
+  },
+]);
 function App() {
   return (
     <>

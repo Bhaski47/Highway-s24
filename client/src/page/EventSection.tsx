@@ -3,8 +3,7 @@ import Header from "../components/common/Header";
 import EventItem from "../components/EventItem";
 import departmentsData from "../data/departmentsData";
 import { useEffect, useState } from "react";
-import marine from "../assets/images/departments/Marine.webp";
-import bgmi from "../assets/images/departments/BGMI.png";
+import eventsData from "../data/eventsData";
 
 const EventSection: React.FC = () => {
   useEffect(() => {
@@ -13,18 +12,6 @@ const EventSection: React.FC = () => {
   }, []);
 
   const [selectedDay, setSelectedDay] = useState(1);
-
-  const day1Event: { image: string; name: string; id: string }[] = [
-    { image: marine, id: "1.1", name: "Event Name" },
-    { image: marine, id: "1.2", name: "Event Name" },
-    { image: marine, id: "1.3", name: "Event Name" },
-  ];
-
-  const day2Event: { image: string; name: string; id: string }[] = [
-    { image: bgmi, id: "2.1", name: "Event Name" },
-    { image: bgmi, id: "2.2", name: "Event Name" },
-    { image: bgmi, id: "2.3", name: "Event Name" },
-  ];
 
   return (
     <>
@@ -61,22 +48,26 @@ const EventSection: React.FC = () => {
         </center>
         <div className={styles.departmentGrid}>
           {selectedDay === 1
-            ? day1Event.map((ele) => (
-                <EventItem
-                  image={ele.image}
-                  name={ele.name}
-                  key={ele.id}
-                  id={ele.id}
-                />
-              ))
-            : day2Event.map((ele) => (
-                <EventItem
-                  image={ele.image}
-                  name={ele.name}
-                  key={ele.id}
-                  id={ele.id}
-                />
-              ))}
+            ? eventsData
+                .filter((ele) => ele.id.startsWith("1"))
+                .map((ele) => (
+                  <EventItem
+                    image={ele.image}
+                    name={ele.name}
+                    key={ele.id}
+                    id={ele.id}
+                  />
+                ))
+            : eventsData
+            .filter((ele) => ele.id.startsWith("2"))
+            .map((ele) => (
+              <EventItem
+                image={ele.image}
+                name={ele.name}
+                key={ele.id}
+                id={ele.id}
+              />
+            ))}
         </div>
       </div>
     </>

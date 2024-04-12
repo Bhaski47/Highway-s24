@@ -15,7 +15,7 @@ const Events: React.FC = () => {
     <>
       <Header />
       <div className={styles.body}>
-        <div className={styles.container}>
+        {/* <div className={styles.container}>
           <h1>Explore</h1>
           <br />
           <br />
@@ -39,7 +39,7 @@ const Events: React.FC = () => {
               return [];
             })}
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
