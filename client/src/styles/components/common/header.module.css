@@ -14,7 +14,7 @@
   align-items: center;
   overflow: hidden;
   border-radius: 0 0 22px 22px;
-  z-index: 999;
+  z-index: 989;
   font-size: 1.1vw;
   font-weight: bold;
 }
@@ -62,8 +62,8 @@
   position: fixed;
   background-color: #0000003f;
   backdrop-filter: blur(10px);
-  z-index: 10;
-  width: 70%;
+  z-index: 997;
+  width: 50%;
   height: 100%;
   padding: 0rem 0 0 1rem;
   font-size: x-large;
@@ -75,9 +75,10 @@
 }
 
 .navMobile > nav {
-  margin: 6rem 0 0 1rem;
+  margin: 6rem 0 0 0rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
 
