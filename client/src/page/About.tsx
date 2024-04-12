@@ -14,15 +14,21 @@ const About: React.FC = () => {
   const isRoot = location.pathname === "/";
   return (
     <>
-      <Header />
-      <HeaderSlide />
       {isRoot ? (
-        <div className={styles.mobContainer} id="about">
-          <AboutContainer />
-        </div>
+        <>
+          <Header />
+          <HeaderSlide />
+          <div className={styles.mobContainer} id="about">
+            <AboutContainer />
+          </div>
+        </>
       ) : (
-        <div className={styles.container} id="about">
-          <AboutContainer />
+        <div style={{ position: "relative", overflow: "hidden" }}>
+          <Header />
+          <HeaderSlide />
+          <div className={styles.container} id="about">
+            <AboutContainer />
+          </div>
         </div>
       )}
     </>
