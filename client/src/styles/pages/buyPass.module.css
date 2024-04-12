@@ -55,6 +55,9 @@
   width: max-content;
   cursor: pointer;
   border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  font-family: "Bangers";
 }
 
 @media screen and (width<1200px) {
