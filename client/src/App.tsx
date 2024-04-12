@@ -1,4 +1,3 @@
-// import React from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from "./page/Home";
 import './App.css';
@@ -11,7 +10,6 @@ import EventSection from './page/EventSection';
 import EventInfo from './page/EventInfo';
 import Schedule from './page/Schedule';
 import TermsAndConditions from './page/Terms';
-
 const router = createBrowserRouter(
   [
     {
@@ -84,7 +82,6 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
-      
     </>
   );
 }

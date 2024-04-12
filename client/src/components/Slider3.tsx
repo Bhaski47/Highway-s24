@@ -41,7 +41,8 @@ const Slider2: React.FC = () => {
       arrows:false,
       interval: 2000,
       autoScroll:{
-        pauseOnHover:false
+        pauseOnHover:false,
+        pauseOnFocus:false
       }
     });
     splide.mount({AutoScroll});

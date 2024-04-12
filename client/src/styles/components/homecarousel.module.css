@@ -1,6 +1,5 @@
 .container{
     position: absolute;
-    padding-top: 2rem;
     z-index: 32;
     width: 100%;
     overflow: hidden;
@@ -11,11 +10,16 @@
 }
 .img{
     width: 100vw;
-    height: 70%;
+    height: 80%;
     object-fit: cover;
 }
 
 @media screen and (width <= 480px) {
+    .img{
+        height: 100vh;
+    }
+}
+@media screen and (width >= 480px) {
     .img{
         height: 100vh;
     }

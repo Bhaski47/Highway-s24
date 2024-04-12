@@ -1,4 +1,3 @@
-// import { useEffect } from "react";
 import styles from "../styles/pages/about.module.css";
 import Header from "../components/common/Header";
 import { useEffect } from "react";
@@ -13,7 +12,7 @@ const About: React.FC = () => {
     <>
       <Header />
       <HeaderSlide />
-      <div className={styles.container}>
+      <div className={styles.container} id="about">
         <h1 className={styles.heading}>About</h1>
         <div className={styles.imgContainer}>
           <Video/>

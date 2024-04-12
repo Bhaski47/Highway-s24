@@ -41,7 +41,8 @@ const Slider2: React.FC = () => {
       pagination: false,
       direction:'rtl',
       autoScroll:{
-        pauseOnHover:false
+        pauseOnHover:false,
+        pauseOnFocus:false
       }
     });
     splide.mount({AutoScroll});
