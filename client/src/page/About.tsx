@@ -3,18 +3,18 @@ import Header from "../components/common/Header";
 import { useEffect } from "react";
 import HeaderSlide from "../utils/HeaderSlide";
 
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 import AboutContainer from "../components/AboutContainer";
 const About: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "About | Highways";
   }, []);
-  const location = useLocation();
-  const isRoot = location.pathname === "/";
+  // const location = useLocation();
+  // const isRoot = location.pathname === "/";
   return (
     <>
-      {isRoot ? (
+      {/* {isRoot ? (
         <>
           <Header />
           <HeaderSlide />
@@ -22,7 +22,7 @@ const About: React.FC = () => {
             <AboutContainer />
           </div>
         </>
-      ) : (
+      ) : ( */}
         <div style={{ position: "relative", overflow: "hidden" }}>
           <Header />
           <HeaderSlide />
@@ -30,7 +30,7 @@ const About: React.FC = () => {
             <AboutContainer />
           </div>
         </div>
-      )}
+      {/* )} */}
     </>
   );
 };
