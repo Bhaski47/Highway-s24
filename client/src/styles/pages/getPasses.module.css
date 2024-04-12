@@ -19,6 +19,19 @@
   padding: 1.3rem;
   border: 1px solid rgba(255, 255, 255, 0.183);
   font-family: "Poppins", serif;
+  transition: all ease 200ms;
+}
+
+.pass:hover{
+  /* padding: 1.3rem 5rem; */
+  transform: scale(1.1);
+}
+
+@media screen and (width < 1230px) {
+  .pass:hover{
+    padding: 1.3rem;
+    transform: scale(1);
+  }
 }
 
 .pass.combo{
