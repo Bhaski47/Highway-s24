@@ -10,7 +10,7 @@ const Sponsors:React.FC=()=>{
     return(
         <>
         <Header/>
-        <div className={styles.container}>
+        <div className={styles.container} id="sponsors">
             <h1 className={styles.heading}>OUR SPONSORS</h1>
             <div className={styles.sponsorContainer}>
                 <h1>COMING SOON !</h1>

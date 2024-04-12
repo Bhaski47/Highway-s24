@@ -2,6 +2,9 @@
   padding-top: 8rem;
   padding-bottom: 8vh;
   font-family: "Bangers", system-ui;  
+  position: relative;
+  z-index: 944;
+  background-color: #0c0c0c;
 }
 
 .heading {

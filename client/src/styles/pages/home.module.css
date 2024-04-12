@@ -1,3 +1,7 @@
+.home{
+  position: relative;
+  z-index: 944;
+}
 .tech {
   background-image: url("../../assets/images/textImage.png");
   background-repeat: repeat;
@@ -10,7 +14,6 @@
   text-align: center;
   font-weight: bold;
   font-weight: 800;
-  -webkit-font-smoothing: antialiased;
 }
 
 .rev {
@@ -45,10 +48,10 @@
   }
 
   .content > h1 {
-    font-size: 19vw;
+    font-size: 15vw;
   }
   .tech {
-    -webkit-text-stroke-width: 1px;
+    /* -webkit-text-stroke-width: 1px; */
     padding: 1vh 0;
   }
 
@@ -153,7 +156,7 @@
     cursor: default;
     position: relative;
     top: 0rem;
-    font-size: 18vw;
+    font-size: 13vw;
     display: inline-block;
   }
 
@@ -224,7 +227,7 @@
   }
 
   .tech {
-    -webkit-text-stroke-width: 2px;
+    /* -webkit-text-stroke-width: 2px; */
     font-family: "Bangers", system-ui;
     font-size: 5vw;
     position: relative;

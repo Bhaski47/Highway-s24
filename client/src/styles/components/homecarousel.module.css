@@ -1,0 +1,26 @@
+.container{
+    position: absolute;
+    z-index: 32;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0.3;
+}
+.container > div{
+    padding: 0 !important;
+}
+.img{
+    width: 100vw;
+    height: 80%;
+    object-fit: cover;
+}
+
+@media screen and (width <= 480px) {
+    .img{
+        height: 100vh;
+    }
+}
+@media screen and (width >= 480px) {
+    .img{
+        height: 100vh;
+    }
+}
