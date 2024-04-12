@@ -40,7 +40,7 @@ const CelebrityWalkin:React.FC=()=>{
             <h1 className={styles.heading}>Celebrity Walkin</h1>
             <div className={styles.walkingsContainer}>
                 {walkings.map((data)=>(
-                    <div className={styles.walkin}>
+                    <div className={styles.walkin} key={data.id}>
                         <h1 key={data.id}>{data.img}</h1>
                         <p>{data.name}</p>
                     </div>

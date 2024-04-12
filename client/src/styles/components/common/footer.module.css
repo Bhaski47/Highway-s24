@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 .wrapper{
     width: 100%;
     background-color: #030303;
     height: 100%;
     position: relative;
     overflow: hidden;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "DM Sans", sans-serif;
   }
   .active{
     text-decoration: none;
-    color: red;
+    color: #61F7CA;
   }
   .inactive{
     color: white;
@@ -39,17 +40,14 @@
   }
   @media screen and (width > 1024px) {
     .clgLogo{
-      /* background-color: red; */
       width: 100%;
     }
     .svceContainer{
       width: 30%;
-      /* background-color: red; */
     }
   }
   @media screen and (width <= 1024px ) {
     .clgLogo{
-      /* background-color: red; */
       width: 80%;
     }
   }
@@ -60,9 +58,6 @@
   
   .svceContainer{
     min-width: 30%;
-    /* background-color: red; */
-    /* display: flex;
-    flex-direction: column; */
   }
   
   .svceContainer > h2 {

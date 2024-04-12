@@ -16,7 +16,6 @@ const Slider1: React.FC = () => {
   useEffect(() => {
     const updatePerPage = () => {
       const screenWidth = window.innerWidth;
-      console.log(screenWidth)
       if (screenWidth >= 1200) {
         setPerPage(5);
       } else if (screenWidth >= 768) {
@@ -32,7 +31,7 @@ const Slider1: React.FC = () => {
     };
   }, []);
   useEffect(() => {
-    const splide = new Splide(".splide", {
+    const splide = new Splide("#splide991", {
       type: "loop",
       drag: "free",
       focus: "center",
@@ -41,7 +40,8 @@ const Slider1: React.FC = () => {
       pagination: false,
       interval: 2000,
       autoScroll:{
-        pauseOnHover:false
+        pauseOnHover:false,
+        pauseOnFocus:false
       }
     });
     splide.mount({AutoScroll});
@@ -52,7 +52,7 @@ const Slider1: React.FC = () => {
 
   return (
     <>
-    <div className="splide">
+    <div id="splide991" className="splide">
       <div className="splide__track">
         <ul className="splide__list">
           <li className="splide__slide">

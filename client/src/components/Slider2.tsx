@@ -16,7 +16,6 @@ const Slider2: React.FC = () => {
   useEffect(() => {
     const updatePerPage = () => {
       const screenWidth = window.innerWidth;
-      console.log(screenWidth)
       if (screenWidth >= 1200) {
         setPerPage(5);
       } else if (screenWidth >= 768) {
@@ -42,7 +41,8 @@ const Slider2: React.FC = () => {
       pagination: false,
       direction:'rtl',
       autoScroll:{
-        pauseOnHover:false
+        pauseOnHover:false,
+        pauseOnFocus:false
       }
     });
     splide.mount({AutoScroll});

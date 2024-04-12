@@ -8,6 +8,9 @@
   font-size: 3rem;
 }
 .location {
+  position: relative;
+  z-index: 914;
+  background-color: #0c0c0c;
   min-height: 85vh;
   padding-top: 8rem;
   margin: auto;
