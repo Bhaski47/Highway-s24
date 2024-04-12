@@ -45,11 +45,14 @@ const Header:React.FC=()=> {
           >
             Events
           </NavLink>
-          <a href="https://forms.gle/jLVFdaH8UxdiQeqaA" target="_blank" rel="noreferrer"
-            className={ styles.inactive}
+          <NavLink
+            to={"/getPasses"}
+            className={({ isActive }) =>
+              isActive ? styles.active : styles.inactive
+            }
           >
             Get Passes
-          </a>
+          </NavLink>
           <NavLink
             to={"/schedule"}
             className={({ isActive }) =>
@@ -111,11 +114,14 @@ const Header:React.FC=()=> {
           >
             Events
           </NavLink>
-          <a href="https://forms.gle/jLVFdaH8UxdiQeqaA" target="_blank" rel="noreferrer"
-            className={ styles.inactive}
+          <NavLink
+            to={"/getPasses"}
+            className={({ isActive }) =>
+              isActive ? styles.active : styles.inactive
+            }
           >
             Get Passes
-          </a>
+          </NavLink>
           <NavLink
             to={"/schedule"}
             className={({ isActive }) =>

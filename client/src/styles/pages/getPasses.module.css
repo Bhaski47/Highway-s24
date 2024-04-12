@@ -1,0 +1,54 @@
+.getPasses{
+  font-family: "Bangers", serif;
+  padding: 7rem 0 3rem 0;
+}
+
+.heading{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.passContainer{
+  display: flex;
+  justify-content: space-evenly;
+  /* width: min-content; */
+}
+
+.pass{
+  border-radius: 10px;
+  padding: 1.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.183);
+  font-family: "Poppins", serif;
+}
+
+.pass.combo{
+  border: 1px solid yellow;
+}
+
+.passTitle{
+  color: white;
+}
+
+.current_price{
+  color: white;
+}
+
+.original_price{
+  color: red;
+}
+
+.passImage{
+  width: 18rem;
+}
+
+@media screen and (width < 1100px) {
+  .passContainer{
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .pass{
+    width: min-content;
+  }
+}
