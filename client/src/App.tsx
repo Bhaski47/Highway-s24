@@ -11,6 +11,8 @@ import EventSection from './page/EventSection';
 import EventInfo from './page/EventInfo';
 import Schedule from './page/Schedule';
 import TermsAndConditions from './page/Terms';
+import GetPasses from './page/GetPasses';
+import BuyPass from './page/BuyPass';
 const router = createBrowserRouter(
   [
     {
@@ -24,7 +26,6 @@ const router = createBrowserRouter(
         <About />
         <Footer />
       </>
-    ),
   },
   {
     path: "/sponsors",
