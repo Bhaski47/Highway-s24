@@ -1,0 +1,14 @@
+.container{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    min-height: 110%;
+}
+
+.rootContainer{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -1.6rem;
+    min-height: 120%;
+}

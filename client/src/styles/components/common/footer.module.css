@@ -4,6 +4,7 @@
     background-color: #030303;
     height: 100%;
     position: relative;
+    z-index: 987;
     overflow: hidden;
     font-family: "DM Sans", sans-serif;
   }
