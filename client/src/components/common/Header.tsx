@@ -81,7 +81,10 @@ const Header:React.FC=()=> {
       </div>
       <div className={styles.container}>
         <section>
+          <NavLink to="/">
+
           <img src={svceLogo} alt="Tech Fest" className={styles.logo} />
+          </NavLink>
         </section>
         <IoMenu
           className={styles.menu}

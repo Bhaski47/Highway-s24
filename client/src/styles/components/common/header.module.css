@@ -14,7 +14,7 @@
   align-items: center;
   overflow: hidden;
   border-radius: 0 0 22px 22px;
-  z-index: 989;
+  z-index: 998;
   font-size: 1.1vw;
   font-weight: bold;
 }
@@ -62,8 +62,8 @@
   position: fixed;
   background-color: #0000003f;
   backdrop-filter: blur(10px);
-  z-index: 997;
-  width: 50%;
+  z-index: 999;
+  width: 70%;
   height: 100%;
   padding: 0rem 0 0 1rem;
   font-size: x-large;

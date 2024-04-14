@@ -1,4 +1,4 @@
-.home{
+.home {
   position: relative;
   z-index: 944;
 }
@@ -7,9 +7,9 @@
   background-repeat: repeat;
   font-family: "Bangers", system-ui;
   background-position: center;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #61F7CA;
+  -webkit-text-stroke-color: #61f7ca;
   -webkit-text-fill-color: transparent;
   text-align: center;
   font-weight: bold;
