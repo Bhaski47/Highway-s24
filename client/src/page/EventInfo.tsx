@@ -7,7 +7,7 @@ import classIcon from "../assets/images/icons/classroomIcon.png";
 import eventsData from "../data/eventsData";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
-import EventItem from "../components/EventItem";
+// import EventItem from "../components/EventItem";
 
 const EventInfo: React.FC = () => {
   useEffect(() => {

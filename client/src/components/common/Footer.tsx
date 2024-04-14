@@ -38,7 +38,7 @@ const Footer:React.FC=()=>{
                 );
               }}
             />
-            <a href="mailto:technoways@svce.ac.in">
+            <a href="mailto:highways@svce.ac.in">
               <IoMail className={styles.footerLogo} />
             </a>
           </div>
@@ -81,11 +81,25 @@ const Footer:React.FC=()=>{
             </p>
             <br />
             <p>
-              <a href="https://forms.gle/jLVFdaH8UxdiQeqaA" rel="noreferrer" target="_blank"
-                className={styles.inactive}
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? styles.active : styles.inactive
+                }
+                to={"/getPasses"}
               >
                 Get Passes
-              </a>
+              </NavLink>
+            </p>
+            <br />
+            <p>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? styles.active : styles.inactive
+                }
+                to={"/schedule"}
+              >
+                Schedule
+              </NavLink>
             </p>
             <br />
             <p>

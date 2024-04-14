@@ -5,7 +5,7 @@ import About from './page/About';
 import Footer from './components/common/Footer';
 import Sponsors from './page/Sponsors';
 import Location from './page/Location';
-import Events from './page/Events';
+// import Events from './page/Events';
 import EventSection from './page/EventSection';
 import EventInfo from './page/EventInfo';
 import Schedule from './page/Schedule';
