@@ -8,7 +8,7 @@ import p3 from "../assets/images/homeslider/3.webp";
 import p4 from "../assets/images/homeslider/4.webp";
 import p5 from "../assets/images/homeslider/5.webp";
 import p6 from "../assets/images/homeslider/6.webp";
-import p7 from "../assets/images/homeslider/7.webp";
+// import p7 from "../assets/images/homeslider/7.webp";
 
 const HomeCarousel: React.FC = () => {
   useEffect(() => {
@@ -37,7 +37,7 @@ const HomeCarousel: React.FC = () => {
       <div id="homeslider" className="splide">
         <div className="splide__track">
           <ul className="splide__list">
-            {[p1, p2, p3, p4, p5, p6, p7].map((image, index) => (
+            {[p1, p2, p3, p4, p5, p6].map((image, index) => (
               <li className="splide__slide" key={index}>
                 <img src={image} alt={`slide-${index}`} className={styles.img} />
               </li>
