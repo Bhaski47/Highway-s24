@@ -22,11 +22,13 @@ const BuyPass: React.FC = () => {
         <div className={styles.buyPass}>
           <h1 className={styles.heading}>Buy Your Passes</h1>
           <div className={styles.passContainer}>
-            <img
-              src={pass === "day1" ? may_7 : pass === "day2" ? may_8 : combo}
-              className={styles.passImage}
-              alt=""
-            />
+            <center>
+              <img
+                src={pass === "day1" ? may_7 : pass === "day2" ? may_8 : combo}
+                className={styles.passImage}
+                alt=""
+              />
+            </center>
             <div className={styles.details}>
               <h1 className={styles.highwaysText}>Highways' 24</h1>
               <br />
@@ -77,75 +79,109 @@ const BuyPass: React.FC = () => {
                 name="customerData"
                 // action="http://localhost:3001/ccavRequestHandler"
                 action="https://technoways-svce-backend.vercel.app/ccavRequestHandler"
-                className={styles.eventFormContainer}
+                className={styles.form}
               >
-                <input
-                  type="text"
-                  name="billing_name"
-                  placeholder="Name"
-                  required
-                />
-                <input
-                  type="text"
-                  name="billing_address"
-                  placeholder="Address"
-                  required
-                />
-                <input
-                  type="text"
-                  name="billing_city"
-                  placeholder="City"
-                  required
-                />
-                <input
-                  type="text"
-                  name="billing_zip"
-                  placeholder="Pincode"
-                  required
-                />
-                <input
-                  type="text"
-                  name="billing_tel"
-                  placeholder="Phone No"
-                  required
-                />
-                <input
-                  type="email"
-                  name="billing_email"
-                  placeholder="Email"
-                  required
-                />
-                <input
-                  type="text"
-                  name="year"
-                  placeholder="Year of Study"
-                  required
-                />
-                <input
-                  type="text"
-                  name="regNo"
-                  placeholder="College Register No"
-                  required
-                />
-                <input
-                  type="text"
-                  name="college"
-                  placeholder="College"
-                  required
-                />
-                <input
-                  type="text"
-                  name="department"
-                  placeholder="Department"
-                  required
-                />
-                <input type="hidden" name="pass" value={pass} />
-                <input type="hidden" name="billing_state" value="Tamil Nadu" />
-                <input
-                  type="submit"
-                  className={styles.buyNow}
-                  value="Buy Now"
-                />
+                <h3 className={styles.formTitle}>
+                  Fill the details to buy your ticket 🎫
+                </h3>
+                <br />
+                <div
+                  style={{ display: "grid", gridTemplateColumns: "auto auto" }}
+                >
+                  <span>Name:</span>
+                  <input
+                    type="text"
+                    name="billing_name"
+                    placeholder="Name"
+                    required
+                  />
+                  <span>Address:</span>
+                  <input
+                    type="text"
+                    name="billing_address"
+                    placeholder="Address"
+                    required
+                  />
+                  {/* <br /> */}
+                  <span>City:</span>
+                  <input
+                    type="text"
+                    name="billing_city"
+                    placeholder="City"
+                    required
+                  />
+                  {/* <br /> */}
+                  <span>Pincode:</span>
+                  <input
+                    type="text"
+                    name="billing_zip"
+                    placeholder="Pincode"
+                    required
+                  />
+                  {/* <br /> */}
+                  <span>Phone No:</span>
+                  <input
+                    type="text"
+                    name="billing_tel"
+                    placeholder="Phone No"
+                    required
+                  />
+                  {/* <br /> */}
+                  <span>Email ID:</span>
+                  <input
+                    type="email"
+                    name="billing_email"
+                    placeholder="Email"
+                    required
+                  />
+                  {/* <br /> */}
+                  <span>Year:</span>
+                  <input
+                    type="text"
+                    name="year"
+                    placeholder="Year of Study"
+                    required
+                  />
+                  {/* <br /> */}
+                  <span>Reg No:</span>
+                  <input
+                    type="text"
+                    name="regNo"
+                    placeholder="College Register No"
+                    required
+                  />
+                  {/* <br /> */}
+                  <span>College:</span>
+                  <input
+                    type="text"
+                    name="college"
+                    placeholder="College"
+                    required
+                  />
+                  {/* <br /> */}
+                  <span>Dept:</span>
+                  <input
+                    type="text"
+                    name="department"
+                    placeholder="Department"
+                    required
+                  />
+                  {/* <br /> */}
+                  <input type="hidden" name="pass" value={pass} />
+                  <input
+                    type="hidden"
+                    name="billing_state"
+                    value="Tamil Nadu"
+                  />
+                  {/* <br /> */}
+                </div>
+                <center>
+                  <input
+                    type="submit"
+                    className={styles.buyNow}
+                    value="Proceed to Payment"
+                  />
+                </center>
               </form>
               {/* <div className={styles.buyNow}>Buy Now</div> */}
             </div>

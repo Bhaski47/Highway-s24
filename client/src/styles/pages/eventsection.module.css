@@ -26,7 +26,7 @@
   border-radius: 1000px;
   align-items: center;
   justify-content: space-around;
-  height: 6vh;
+  height: 3.1rem;
 }
 
 .toggle_overlay{
@@ -49,6 +49,7 @@
   height: 5vh;
   align-content: center;
   text-align: center;
+  align-items: center;
   cursor: pointer;
 }
 
