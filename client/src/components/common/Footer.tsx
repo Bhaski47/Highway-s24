@@ -21,7 +21,7 @@ const Footer:React.FC=()=>{
           <img src={svce} alt="SVCE" className={styles.clgLogo} />
           <h2>A National Level Intercollege Culturals</h2>
           <div>
-            <a href="tel:+91 95514 49859">
+            <a href="tel:+91 9551449859">
               <IoCall className={styles.footerLogo} />
             </a>
             <NavLink to={"/location"}>
@@ -33,7 +33,7 @@ const Footer:React.FC=()=>{
               style={{ cursor: "pointer" }}
               onClick={() => {
                 window.open(
-                  "https://www.instagram.com/technoways_24?igsh=MWtrNzhpaDhvdTc3OA==",
+                  "https://www.instagram.com/svce_highways/",
                   "_blank"
                 );
               }}

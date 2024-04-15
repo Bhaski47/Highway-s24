@@ -147,3 +147,8 @@
     display: block;
   }
 }
+@media screen and (width >=1024px) {
+  .container{
+    min-height: 5rem;
+  }
+}

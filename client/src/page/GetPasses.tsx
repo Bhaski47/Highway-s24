@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 const GetPasses: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Events | Technoways";
+    document.title = "Events | Highways";
   }, []);
 
   return (

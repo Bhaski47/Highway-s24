@@ -48,7 +48,8 @@
   width: 7.5vw;
   height: 5vh;
   align-content: center;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
 }

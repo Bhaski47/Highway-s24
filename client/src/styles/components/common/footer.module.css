@@ -46,6 +46,16 @@
     .svceContainer{
       width: 30%;
     }
+    .menu{
+      min-width:8rem ;
+    }
+    .menu a{
+      transition: all ease-in-out 0.2s;
+    }
+    .menu a:hover{
+      color:#61F7CA;
+      padding-left: 10px;
+    }
   }
   @media screen and (width <= 1024px ) {
     .clgLogo{

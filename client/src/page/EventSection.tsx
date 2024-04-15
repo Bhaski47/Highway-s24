@@ -8,7 +8,7 @@ import eventsData from "../data/eventsData";
 const EventSection: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Events | Technoways";
+    document.title = "Events | Highways";
   }, []);
 
   const [selectedDay, setSelectedDay] = useState(1);
