@@ -13,8 +13,6 @@ const BuyPass: React.FC = () => {
   }, []);
 
   const { pass } = useParams();
-  console.log(pass);
-
   return (
     <>
       <Header />

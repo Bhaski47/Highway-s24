@@ -3,3 +3,14 @@ html{
   background-color: #0C0C0F;
   color: white;
 }
+:root {
+  --color-background: #000119;
+  --stroke-width: calc(1em / 16);
+  --font-size: 13vmin;
+  --font-weight: 700;
+  --letter-spacing: calc(1em / 8);
+}
+
+* {
+  box-sizing: border-box;
+}

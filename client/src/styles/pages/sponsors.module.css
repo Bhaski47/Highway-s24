@@ -1,9 +1,72 @@
+
 .container {
   padding-top: 8rem;
   padding-bottom: 8vh;
   position: relative;
   z-index: 948;
   background-color: #0c0c0c;
+}
+
+.sponsorContainer > h1{
+  font-size: 96px;
+  /* font-family: 'Fira Mono', monospace; */
+  letter-spacing: -7px;
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+.sponsorContainer > h1:before,
+.sponsorContainer > h1:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.sponsorContainer > h1:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+.sponsorContainer > h1:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
 }
 .heading {
   font-family: "Bangers";
@@ -12,6 +75,7 @@
   letter-spacing: 0.2vw;
   font-size: 3rem;
 }
+
 .container > h1 {
   font-family: "Bangers";
   letter-spacing: 0.2vw;
@@ -24,13 +88,14 @@
   justify-content: center;
   align-items: center;
 }
-.sponsorContainer > h1 {
+
+/* .sponsorContainer > h1 {
   text-align: center;
   font-size: 3vw;
   font-family: "Abril Fatface";
-}
+} */
 
-@media screen and (width<=480px) {
+@media screen and (max-width: 480px) {
   .heading {
     font-family: "Bangers";
     text-align: center;
@@ -38,6 +103,7 @@
     letter-spacing: 0.2vw;
     font-size: 2rem;
   }
+
   .container {
     padding-top: 15vh;
   }
@@ -53,6 +119,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .sponsorContainer > h1 {
     text-align: center;
     font-size: 8vw;

@@ -34,7 +34,7 @@ const Home: React.FC = () => {
               <div className={styles.titleHighlight}>Get Pass</div>
             </NavLink>
             <NavLink
-              to={"/"}
+              to={"/about"}
               style={{ textDecoration: "none", color: "white" }}
             >
               <div className={styles.title}>Learn More</div>

@@ -19,7 +19,7 @@
 }
 
 .details {
-  padding: 5rem;
+  padding: 0 5rem 5rem 5rem;
   text-align: left;
 }
 
@@ -68,7 +68,7 @@
   background-color: black;
   padding: 2rem;
   border: white 1px solid;
-
+  border-radius: 15px;
   input {
     background-color: transparent;
     border: solid 1px rgba(255, 255, 255, 0.28);
@@ -76,7 +76,7 @@
     padding: 5px;
     margin-bottom: 1rem;
   }
-
+  
   span {
     font-family: "Poppins";
     font-weight: normal;
