@@ -75,6 +75,14 @@
     border-radius: 5px;
     padding: 5px;
     margin-bottom: 1rem;
+    color: #fff;
+  }
+  input:hover{
+    border: 1px solid #7df8d3;
+  }
+  input:focus{
+    border: 1px solid #61F7CA;
+    outline: none;
   }
   
   span {
