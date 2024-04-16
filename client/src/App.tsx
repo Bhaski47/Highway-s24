@@ -14,11 +14,6 @@ import TermsAndConditions from './page/Terms';
 import GetPasses from './page/GetPasses';
 import BuyPass from './page/BuyPass';
 import { useEffect } from "react";
-useEffect(() => {
-  ReactGA.initialize(`${process.env.REACT_API_BASE_TRACKING_ID}`);
-  ReactGA.send({ hitType: "pageview", page: "/landingpage", title: "Landing Page" });
-  console.log(process.env.REACT_API_BASE_TRACKING_ID);
-}, [])
 const router = createBrowserRouter(
   [
     {
@@ -111,6 +106,11 @@ const router = createBrowserRouter(
     },
   ]);
 function App() {
+  useEffect(() => {
+    ReactGA.initialize(`${process.env.REACT_API_BASE_TRACKING_ID}`);
+    ReactGA.send({ hitType: "pageview", page: "/landingpage", title: "Landing Page" });
+    console.log(process.env.REACT_API_BASE_TRACKING_ID);
+  }, [])
   return (
     <>
       <RouterProvider router={router} />
