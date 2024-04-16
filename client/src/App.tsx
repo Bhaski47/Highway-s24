@@ -107,9 +107,8 @@ const router = createBrowserRouter(
   ]);
 function App() {
   useEffect(() => {
-    ReactGA.initialize(`${process.env.REACT_API_BASE_TRACKING_ID}`);
+    ReactGA.initialize('G-BFYLR90T4L ');
     ReactGA.send({ hitType: "pageview", page: "/landingpage", title: "Landing Page" });
-    console.log(process.env.REACT_API_BASE_TRACKING_ID);
   }, [])
   return (
     <>

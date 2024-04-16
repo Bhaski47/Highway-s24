@@ -4,6 +4,7 @@ import EventItem from "../components/EventItem";
 // import departmentsData from "../data/departmentsData";
 import { useEffect, useState } from "react";
 import eventsData from "../data/eventsData";
+import ReactGA from "react-ga4";
 
 const EventSection: React.FC = () => {
   useEffect(() => {
@@ -24,6 +25,11 @@ const EventSection: React.FC = () => {
             <div
               className={styles.day}
               onClick={() => {
+                ReactGA.event({
+                  category: 'Button Click',
+                  action: 'Clicked on Day1 page',
+                  label: 'Day1',
+                });
                 setSelectedDay(1);
               }}
             >
@@ -32,6 +38,11 @@ const EventSection: React.FC = () => {
             <div
               className={styles.day}
               onClick={() => {
+                ReactGA.event({
+                  category: 'Button Click',
+                  action: 'Clicked on Day2 page',
+                  label: 'Day2',
+                });
                 setSelectedDay(2);
               }}
             >
