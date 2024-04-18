@@ -9,7 +9,7 @@ import { useParams } from "react-router-dom";
 const BuyPass: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Events | Technoways";
+    document.title = "Buy Passes | Technoways";
   }, []);
 
   const { pass } = useParams();
