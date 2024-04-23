@@ -17,7 +17,7 @@
 .flexContainer {
   background-color: #0c0c0c;
   position: relative;
-  z-index: 969;
+  /* z-index: 969; */
   padding-top: 8rem;
   display: flex;
   flex-direction: column;
@@ -44,6 +44,7 @@
     object-fit: cover;
   }
   .flexContainer {
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
   }
