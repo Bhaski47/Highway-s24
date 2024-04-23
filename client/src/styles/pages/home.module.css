@@ -53,6 +53,7 @@
   }
   .tech {
     /* -webkit-text-stroke-width: 1px; */
+    width: 80vw;
     padding: 1vh 0;
   }
 
@@ -236,6 +237,9 @@
     font-size: 13vw;
     display: inline-block;
   } */
+  .tech{
+    width: 80vw;
+  }
   .title {
     padding: 1rem 1rem;
     font-size: 1rem;
