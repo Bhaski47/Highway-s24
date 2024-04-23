@@ -4,10 +4,10 @@ import styles from "../styles/pages/techteam.module.css";
 import bhaski from "../assets/images/techteam/bhaski.webp";
 import lekha from "../assets/images/techteam/lekha.svg";
 import naveen from "../assets/images/techteam/naveen.svg";
-import git from "../assets/images/icons/🦆 icon _github_.svg";
-import web from "../assets/images/icons/🦆 icon _globe_.svg";
-import insta from "../assets/images/icons/🦆 icon _instagram_.svg";
-import linkedin from "../assets/images/icons/🦆 icon _linkedin_.svg";
+import git from "../assets/images/icons/github_.svg";
+import web from "../assets/images/icons/globe_.svg";
+import insta from "../assets/images/icons/instagram_.svg";
+import linkedin from "../assets/images/icons/linkedin_.svg";
 import GradientText from "../utils/GradientText";
 import ReactGA from "react-ga4";
 const TechTeam: React.FC = () => {
