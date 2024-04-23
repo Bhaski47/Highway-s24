@@ -9,10 +9,9 @@ import {
   IoLocation,
 } from "react-icons/io5";
 
-
-const Footer:React.FC=()=>{
-    return(
-        <div className={styles.wrapper}>
+const Footer: React.FC = () => {
+  return (
+    <div className={styles.wrapper}>
       <div className={styles.footerContainer}>
         <div className={styles.foot}></div>
       </div>
@@ -161,8 +160,13 @@ const Footer:React.FC=()=>{
           </section>
         </div>
       </div>
+      <center>
+        <NavLink className={styles.techteam} to={"/team"}>
+          Developed By Tech Team
+        </NavLink>
+      </center>
     </div>
-    )
-}
+  );
+};
 
 export default Footer;

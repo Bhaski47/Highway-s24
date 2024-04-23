@@ -1,0 +1,132 @@
+.container{
+    padding-top: 7rem;
+    display: grid;
+    place-items: center;
+    font-family: Poppins;
+}
+.container > h1{
+    text-align: center;
+}
+.cardContainer{
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15rem;
+    max-width: 80%;
+}
+.card{
+    padding: 2rem;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    & img {
+        width: 100%;
+    }
+}
+.bhcard{
+    position: relative;
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid #A37F00;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.2s all ease-in-out;
+}
+.bhcard:hover{
+    border: 1px solid rgb(234, 63, 136);
+    box-shadow: 
+    0px 4px 8px rgba(0, 0, 0, 0.1),
+    0px 0px 30px rgb(234, 63, 86), 
+    0px 0px 60px rgb(102, 40, 40); 
+}
+.bhcard:hover > img{
+    transform: translateY(-10px);
+}
+.nascard:hover > img{
+    transform: translateY(-10px);
+}
+.lekhacard:hover > img{
+    transform: translateY(-10px);
+}
+.lekhacard:hover{
+    border: 1px solid rgb(239, 222, 186);
+    box-shadow: 
+    0px 4px 8px rgba(0, 0, 0, 0.1),
+    0px 0px 30px rgb(171, 151, 58),
+    0px 0px 60px rgb(239, 222, 186); 
+}
+.nascard:hover{
+    border: 1px solid rgb(130, 134, 135);
+    box-shadow: 
+    0px 4px 8px rgba(0, 0, 0, 0.1),
+    0px 0px 30px rgb(192, 232, 254), 
+    0px 0px 60px rgb(130, 134, 135); 
+}
+.bhcard > img {
+    border-radius: 5px;
+    object-fit: cover;
+    height: 38vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    z-index: 80;
+    position: relative;
+}
+
+.nascard >img{
+    object-fit: cover;
+    transition: all 0.2s ease-in-out;
+}
+.lekhacard >img{
+    object-fit: cover;
+    transition: all 0.2s ease-in-out;
+}
+
+.nascard{
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid #A37F00;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s all ease-in-out;
+    & img {
+        object-fit: cover;
+        height: 38vh;
+    }
+}
+.lekhacard{
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid #5E007F;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s all ease-in-out;
+    & img {
+        object-fit: cover;
+        height: 38vh;
+    }
+}
+.linkContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.linkContainer >a {
+    padding-top: 1rem;
+}
+.linkContainer > a > img{
+    height: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .cardContainer {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cardContainer {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}

@@ -5,6 +5,7 @@ import may_8 from "../assets/images/may_8.png";
 import combo from "../assets/images/combo.png";
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import ReactGA from "react-ga4";
 
 const GetPasses: React.FC = () => {
   useEffect(() => {
@@ -19,7 +20,13 @@ const GetPasses: React.FC = () => {
         <h1 className={styles.heading}>Buy Your Passes</h1>
         <center>
           <div className={styles.passContainer}>
-            <NavLink to={"/buyPass/day1"} style={{ textDecoration: "none" }}>
+            <NavLink to={"/buyPass/day1"} style={{ textDecoration: "none" }} onClick={() => {
+                ReactGA.event({
+                  category: 'Button Click',
+                  action: 'Clicked Day1 Ticket ',
+                  label: 'Day1 Ticket',
+                });
+              }}>
               <div className={styles.pass}>
                 <img src={may_7} alt="" className={styles.passImage} />
                 <h4 className={styles.passTitle}>
@@ -31,7 +38,13 @@ const GetPasses: React.FC = () => {
                 </h3>
               </div>
             </NavLink>
-            <NavLink to={"/buyPass/day2"} style={{ textDecoration: "none" }}>
+            <NavLink to={"/buyPass/day2"} style={{ textDecoration: "none" }} onClick={() => {
+                ReactGA.event({
+                  category: 'Button Click',
+                  action: 'Clicked Day2 Ticket ',
+                  label: 'Day2 Ticket',
+                });
+              }}>
               <div className={styles.pass}>
                 <img src={may_8} alt="" className={styles.passImage} />
                 <h4 className={styles.passTitle}>
@@ -43,7 +56,13 @@ const GetPasses: React.FC = () => {
                 </h3>
               </div>
             </NavLink>
-            <NavLink to={"/buyPass/combo"} style={{ textDecoration: "none" }}>
+            <NavLink to={"/buyPass/combo"} style={{ textDecoration: "none" }} onClick={() => {
+                ReactGA.event({
+                  category: 'Button Click',
+                  action: 'Clicked Combo Ticket ',
+                  label: 'Combo Ticket',
+                });
+              }}>
               <div className={styles.pass + " " + styles.combo}>
                 <img src={combo} alt="" className={styles.passImage} />
                 <h4 className={styles.passTitle}>

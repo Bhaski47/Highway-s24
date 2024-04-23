@@ -8,6 +8,14 @@
     overflow: hidden;
     font-family: "DM Sans", sans-serif;
   }
+  .techteam{
+    position: relative;
+    z-index: 943;
+    top: -40px;
+    font-size: larger;
+    text-decoration: underline;
+    color: white;
+  }
   .active{
     text-decoration: none;
     color: #61F7CA;
@@ -23,7 +31,7 @@
     justify-content: space-evenly;
     margin-top: 3rem;
     position: relative;
-    z-index: 9;
+    /* z-index: 9; */
   }
   .menu > h2,.contacts >h2{
     cursor: default;
@@ -37,7 +45,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    /* z-index: 1; */
   }
   @media screen and (width > 1024px) {
     .clgLogo{

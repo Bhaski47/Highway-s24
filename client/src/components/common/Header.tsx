@@ -82,7 +82,7 @@ const Header:React.FC=()=> {
       <div className={styles.container}>
         <section>
           <NavLink to="/">
-          <img src={svceLogo} alt="Tech Fest" className={styles.logo} />
+          <img src={svceLogo} alt="Highways 24" className={styles.logo} />
           </NavLink>
         </section>
         <IoMenu
