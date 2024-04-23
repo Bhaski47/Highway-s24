@@ -1,7 +1,7 @@
 import styles from "../styles/pages/getPasses.module.css";
 import Header from "../components/common/Header";
-import may_7 from "../assets/images/may_7.png";
-import may_8 from "../assets/images/may_8.png";
+// import may_7 from "../assets/images/may_7.png";
+// import may_8 from "../assets/images/may_8.png";
 import combo from "../assets/images/combo.png";
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
@@ -20,7 +20,7 @@ const GetPasses: React.FC = () => {
         <h1 className={styles.heading}>Buy Your Passes</h1>
         <center>
           <div className={styles.passContainer}>
-            <NavLink to={"/buyPass/day1"} style={{ textDecoration: "none" }} onClick={() => {
+            {/* <NavLink to={"/buyPass/day1"} style={{ textDecoration: "none" }} onClick={() => {
                 ReactGA.event({
                   category: 'Button Click',
                   action: 'Clicked Day1 Ticket ',
@@ -55,7 +55,7 @@ const GetPasses: React.FC = () => {
                   Current Price : <span style={{ color: "yellow" }}>₹ 650</span>
                 </h3>
               </div>
-            </NavLink>
+            </NavLink> */}
             <NavLink to={"/buyPass/combo"} style={{ textDecoration: "none" }} onClick={() => {
                 ReactGA.event({
                   category: 'Button Click',
@@ -66,11 +66,17 @@ const GetPasses: React.FC = () => {
               <div className={styles.pass + " " + styles.combo}>
                 <img src={combo} alt="" className={styles.passImage} />
                 <h4 className={styles.passTitle}>
-                  HIGHWAYS’ 24 COMBO - TICKET
+                  HIGHWAYS’ 24 EARLY BIRD - TICKET
                 </h4>
-                <p className={styles.original_price}>Original Price : ₹ 900</p>
+                <p className={styles.original_price}>
+                  Original Price :{" "}
+                  <span style={{ textDecoration: "line-through" }}>₹ 900</span>
+                </p>
                 <h3 className={styles.current_price}>
-                  Current Price : <span style={{ color: "yellow" }}>₹ 750</span>
+                  SVCE Students : <span style={{ color: "yellow" }}>₹ 699</span>
+                </h3>
+                <h3 className={styles.current_price}>
+                  Other College Students : <span style={{ color: "yellow" }}>₹ 799</span>
                 </h3>
               </div>
             </NavLink>

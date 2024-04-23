@@ -28,7 +28,9 @@ const BuyPass: React.FC = () => {
               />
             </center>
             <div className={styles.details}>
+              {/* <h1 className={styles.highwaysText}>Highways' 24</h1> */}
               <h1 className={styles.highwaysText}>Highways' 24</h1>
+              <h1 className={styles.ticketTitle}>Early Bird Ticket</h1>
               <br />
               <p>Book your tickets here</p>
               <br />
@@ -41,11 +43,12 @@ const BuyPass: React.FC = () => {
                     fontWeight: "normal",
                   }}
                 >
-                  {pass === "day1" ? "₹700" : pass === "day2" ? "₹800" : "₹900"}
+                  {/* {pass === "day1" ? "₹700" : pass === "day2" ? "₹800" : "₹900"} */}
+                  ₹900
                 </span>
               </h4>
               <br />
-              <h4 className={styles.current_price}>
+              {/* <h4 className={styles.current_price}>
                 Current Price:{" "}
                 <span
                   style={{
@@ -54,6 +57,28 @@ const BuyPass: React.FC = () => {
                   }}
                 >
                   {pass === "day1" ? "₹550" : pass === "day2" ? "₹650" : "₹750"}
+                </span>
+              </h4> */}
+              <h4 className={styles.current_price}>
+                SVCE Students:{" "}
+                <span
+                  style={{
+                    color: "yellow",
+                    fontWeight: "normal",
+                  }}
+                >
+                  ₹699
+                </span>
+              </h4>
+              <h4 className={styles.current_price}>
+                Other College Students:{" "}
+                <span
+                  style={{
+                    color: "yellow",
+                    fontWeight: "normal",
+                  }}
+                >
+                  ₹799
                 </span>
               </h4>
               <br />
@@ -174,6 +199,11 @@ const BuyPass: React.FC = () => {
                   {/* <br /> */}
                 </div>
                 <center>
+                  <p style={{fontFamily:"Poppins", color:"gray", fontSize:"smaller"}}>Note:</p>
+                  <p style={{fontFamily:"Poppins", color:"gray", fontSize:"smaller"}}>Please provide a valid email address for receiving the tickets.</p>
+                  {/* <br /> */}
+                  <p style={{fontFamily:"Poppins", color:"gray", fontSize:"smaller"}}>Utilize the SVCE Official Email ID to avail the offer.</p>
+                  <br />
                   <input
                     type="submit"
                     className={styles.buyNow}

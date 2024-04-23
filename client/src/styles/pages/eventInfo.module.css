@@ -6,139 +6,134 @@
 }
 
 .wrapper {
-    display: flex;
-    gap: 2rem;
-    padding: 7rem 0 3rem 0;
-  }
-  
-  /* .img {
+  display: flex;
+  gap: 2rem;
+  padding: 7rem 0 3rem 0;
+}
+
+/* .img {
     height: 80vh;
     position: relative;
     width: 100%;
     margin: auto;
   } */
-  
-  .contextContainer {
-    /* background: url("../../assets/images/eventCard.png"); */
-    border-radius: 44px;
-    /* background-color: red; */
-    background-color: rgba(50, 44, 44, 0.258);
-    backdrop-filter: blur(10px);
-    background-size: 100% 100%;
-    width: 100%;
-    padding: 2rem 2rem 2rem 2rem;
-    line-height: 1.7rem;
-    border: 1px solid #503938;
+
+.contextContainer {
+  /* background: url("../../assets/images/eventCard.png"); */
+  border-radius: 44px;
+  /* background-color: red; */
+  background-color: rgba(50, 44, 44, 0.258);
+  backdrop-filter: blur(10px);
+  background-size: 100% 100%;
+  width: 100%;
+  padding: 2rem 2rem 2rem 2rem;
+  line-height: 1.7rem;
+  border: 1px solid #503938;
+}
+
+.contextContainer > p:nth-child(2) {
+  margin: 1rem 0 1rem 0;
+  line-height: normal;
+}
+
+.contextContainer > ul {
+  margin-left: 1rem;
+}
+
+.details {
+  font-size: 14px;
+  display: flex;
+  margin: 1rem 0 1rem 0;
+  justify-content: space-around;
+}
+
+.getPass {
+  /* cursor: pointer; */
+  padding: 9px 14px 9px 14px;
+  background: transparent;
+  background-color: rgba(50, 44, 44, 0.258);
+
+  border: 1px solid #503938;
+  backdrop-filter: blur(10px);
+
+  /* border: #eb0029 solid 2px; */
+  border-radius: 10px;
+  margin: 2rem 0 2rem 0;
+  color: white;
+  letter-spacing: 1px;
+  font-size: large;
+  transition: 300ms;
+}
+
+.getPass:hover {
+  border: 1px solid #eb0029;
+  box-shadow: 0px 0px 40px 1px #eb002787;
+}
+
+.scrollingText {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrollingText p {
+  letter-spacing: 5px;
+  animation: marquee 20s linear infinite;
+  /* animation-direction: normal; */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%);
   }
-  
-  .contextContainer > p:nth-child(2) {
-    margin: 1rem 0 1rem 0;
-    line-height: normal;
+  100% {
+    transform: translateX(100%);
   }
-  
-  .contextContainer > ul {
-    margin-left: 1rem;
-  }
-  
-  .details {
-    font-size: 14px;
-    display: flex;
-    margin: 1rem 0 1rem 0;
-    justify-content: space-around;
-  }
-  
-  .getPass {
-    /* cursor: pointer; */
-    padding: 9px 14px 9px 14px;
-    background: transparent;
-    background-color: rgba(50, 44, 44, 0.258);
-  
-    border: 1px solid #503938;
-    backdrop-filter: blur(10px);
-  
-    /* border: #eb0029 solid 2px; */
-    border-radius: 10px;
-    margin: 2rem 0 2rem 0;
-    color: white;
-    letter-spacing: 1px;
-    font-size: large;
-    transition: 300ms;
-  }
-  
-  .getPass:hover {
-    border: 1px solid #eb0029;
-    box-shadow: 0px 0px 40px 1px #eb002787;
-  }
-  
-  .scrollingText {
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  
+}
+
+@media screen and (width < 1360px) {
   .scrollingText p {
-    letter-spacing: 5px;
-    animation: marquee 20s linear infinite;
+    letter-spacing: 2px;
+    animation: marquee 10s linear infinite;
     /* animation-direction: normal; */
   }
-  
-  @keyframes marquee {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(100%);
+
+  .container {
+    /* width: 100%; */
+    /* margin:  2rem ; */
+  }
+  .wrapper {
+    &h1 {
+      font-size: 18px;
     }
   }
-  
-  @media screen and (width < 1360px) {
-    .scrollingText p {
-      letter-spacing: 2px;
-      animation: marquee 10s linear infinite;
-      /* animation-direction: normal; */
-    }
-  
-    .container {
-      /* width: 100%; */
-      /* margin:  2rem ; */
-    }
-    .wrapper {
-      &h1 {
-        font-size: 18px;
-      }
-    }
-    .contextContainer {
-      background-size: contain;
-      /* padding: 2rem; */
-    }
-    .details {
-      display: block;
-      /* display: flex;
+  .contextContainer {
+    background-size: contain;
+    /* padding: 2rem; */
+  }
+  .details {
+    display: block;
+    /* display: flex;
       flex-wrap: wrap;
       gap: 15px; */
-    }
-    .text {
-      /* font-size: 10px; */
-    }
   }
-
-
-
-
-
-
-  .department {
-    font-family: "Space Grotesk", sans-serif;
-    height: 80vh;
-    width: 30vw;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-    transition: all 300ms ease-in-out;
-    border: 2px solid #503938;
-    border-radius: 22px;
-    padding: 0 1rem 0 1rem;
+  .text {
+    /* font-size: 10px; */
   }
-  /* .blackBackground {
+}
+
+.department {
+  font-family: "Space Grotesk", sans-serif;
+  height: 80vh;
+  width: 30vw;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  transition: all 300ms ease-in-out;
+  border: 2px solid #503938;
+  border-radius: 22px;
+  padding: 0 1rem 0 1rem;
+}
+/* .blackBackground {
     margin: 0 -1rem 0 -1rem;
     border-radius: 22px;
     position: absolute;
@@ -146,91 +141,91 @@
     width: 100%;
     height: 100%;
   } */
-  .logo {
-    height: 5vh;
-    margin: 0.5rem 0.5rem 0.5rem 2rem;
+.logo {
+  height: 5vh;
+  margin: 0.5rem 0.5rem 0.5rem 2rem;
+}
+.logoContainer {
+  width: 100%;
+}
+.know {
+  position: relative;
+  bottom: 3%;
+}
+.nameDiv p {
+  text-decoration: none;
+  color: white;
+}
+.nameDiv {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  /* background-color: red; */
+}
+.topBar {
+  position: relative;
+  /* left: 4%; */
+  display: flex;
+  /* justify-content: space-around; */
+  margin-top: 4%;
+  align-items: center;
+  background-image: url("../../assets/images/textImage.png");
+  background-repeat: repeat;
+  font-family: "Bangers", system-ui;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-stroke-width: 0.01px;
+  -webkit-text-stroke-color: #61f7ca;
+  -webkit-text-fill-color: transparent;
+  font-size: 2vw;
+  font-weight: bold;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+}
+.title {
+  position: relative;
+  top: -15%;
+  /* text-align: center; */
+  font-size: 1.9vw;
+  min-width: 80%;
+  /* background-color: red; */
+  font-weight: bold;
+}
+
+.nameDiv > img {
+  height: 12px;
+}
+
+@media screen and (width < 900px) {
+  .container {
+    width: 90%;
+    /* margin: 2rem; */
   }
-  .logoContainer {
+  .wrapper {
+    display: block;
+    /* padding-right: 3rem; */
+  }
+
+  .details {
+    display: block;
+  }
+
+  .contextContainer {
+    /* margin-top: 2rem; */
+    /* max-width: 80%; */
+    /* width: 78vw; */
+  }
+  .department {
+    margin-bottom: 2rem;
     width: 100%;
+    height: 50vw;
   }
-  .know {
-    position: relative;
-    bottom: 3%;
-  }
-  .nameDiv p {
-    text-decoration: none;
-    color: white;
-  }
-  .nameDiv {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: white;
-    /* background-color: red; */
-  }
-  .topBar {
-    position: relative;
-    /* left: 4%; */
-    display: flex;
-    /* justify-content: space-around; */
-    margin-top: 4%;
-    align-items: center;
-    background-image: url("../../assets/images/textImage.png");
-    background-repeat: repeat;
-    font-family: "Bangers", system-ui;
-    background-position: center;
-    -webkit-background-clip: text;
-    -webkit-text-stroke-width: 0.01px;
-    -webkit-text-stroke-color: #61F7CA;
-    -webkit-text-fill-color: transparent;
-    font-size: 2vw;
-    font-weight: bold;
-    font-weight: 800;
-    -webkit-font-smoothing: antialiased;
-  }
-  .title {
-    position: relative;
-    top: -15%;
-    /* text-align: center; */
-    font-size: 1.9vw;
-    min-width: 80%;
-    /* background-color: red; */
-    font-weight: bold;
-  }
-  
-  .nameDiv > img {
-    height: 12px;
-  }
-  
-  @media screen and (width < 900px)  {
-    .container{
-      width: 90%;
-      /* margin: 2rem; */
-    }
-    .wrapper{
-      display: block;
-      /* padding-right: 3rem; */
-    }
+}
 
-    .details{
-      display: block;
-    }
-
-    .contextContainer{
-      /* margin-top: 2rem; */
-      max-width: 80%;
-      /* width: 78vw; */
-    }
-    .department{
-      margin-bottom: 2rem;
-      width: 90%;
-      height: 50vw;
-    }
-  }
-
-  /* @media screen and (width > 1024px)  {
+/* @media screen and (width > 1024px)  {
     .department:hover {
       transform: scale(1.1);
       border: 2px solid #eb0029;
@@ -245,8 +240,8 @@
       box-shadow: 0px 0px 40px 1px #eb002787;
     }
   } */
-  
-  /* @media screen and (width < 530px) {
+
+/* @media screen and (width < 530px) {
     .department {
       padding: 12px;
       height: 200px;
@@ -269,5 +264,3 @@
       font-size: 15px;
     }
   } */
-  
-  
