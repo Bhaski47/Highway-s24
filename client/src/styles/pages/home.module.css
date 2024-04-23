@@ -3,17 +3,18 @@
   z-index: 944;
 }
 .tech {
-  background-image: url("../../assets/images/textImage.png");
-  background-repeat: repeat;
-  font-family: "Bangers", system-ui;
-  background-position: center;
-  background-clip: text;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #61f7ca;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  font-weight: bold;
-  font-weight: 800;
+  /* background-image: url("../../assets/images/textImage.png"); */
+  /* background-repeat: repeat; */
+  /* font-family: "Bangers", system-ui; */
+  /* background-position: center; */
+  /* background-clip: text; */
+  /* -webkit-text-stroke-width: 2px; */
+  /* -webkit-text-stroke-color: #61f7ca; */
+  /* -webkit-text-fill-color: transparent; */
+  /* text-align: center; */
+  /* font-weight: bold; */
+  /* font-weight: 800; */
+  width: 70vw;
 }
 
 .rev {
@@ -152,13 +153,13 @@
     row-gap: 30px;
     flex-wrap: wrap;
   }
-  .tech {
+  /* .tech {
     cursor: default;
     position: relative;
     top: 0rem;
     font-size: 13vw;
     display: inline-block;
-  }
+  } */
 
   .title {
     padding: 1rem 1rem;
@@ -226,8 +227,7 @@
     flex-wrap: wrap;
   }
 
-  .tech {
-    /* -webkit-text-stroke-width: 2px; */
+  /* .tech {
     font-family: "Bangers", system-ui;
     font-size: 5vw;
     position: relative;
@@ -235,7 +235,7 @@
     letter-spacing: 15px;
     font-size: 13vw;
     display: inline-block;
-  }
+  } */
   .title {
     padding: 1rem 1rem;
     font-size: 1rem;

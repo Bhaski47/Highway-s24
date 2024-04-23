@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-// import { Link } from "react-scroll";
 import styles from "../styles/pages/home.module.css";
 import Header from "../components/common/Header";
 import { NavLink } from "react-router-dom";
@@ -10,6 +9,7 @@ import Location from "./Location";
 import Glimpse from "./Glimpse";
 import CelebrityWalkin from "./CelebrityWalkin";
 import HomeCarousel from "../components/HomeCarousel";
+import landingPage from '../assets/images/landingPage.svg';
 const Home: React.FC = () => {
   useEffect(() => {
     document.title = "Home | Highways";
@@ -22,7 +22,8 @@ const Home: React.FC = () => {
         <div className={styles.home} id="home">
           <div className={styles.content}>
             <p className={styles.rev}>NATIONAL LEVEL CULTURAL FEST</p>
-            <h1 className={styles.tech}>HIGHWAYS' 24</h1>
+            {/* <h1 className={styles.tech}>HIGHWAYS' 24</h1> */}
+            <img src={landingPage} alt="~" className={styles.tech} />
             <p className={styles.time}>MAY 7 & 8,2024</p>
             <br />
           </div>
