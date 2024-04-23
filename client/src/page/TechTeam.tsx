@@ -64,7 +64,7 @@ const TechTeam: React.FC = () => {
     {
       id: 3,
       imgs: naveen,
-      name: "Naveen",
+      name: "Naveen Akash",
       college: "SVCE",
       year: "III rd YEAR - IT Student",
       role: "Developer",
@@ -160,7 +160,7 @@ const TechTeam: React.FC = () => {
                   </a>
                 </div>
               </div>
-            ) : data.name === "Naveen" ? (
+            ) : data.name === "Naveen Akash" ? (
               <div className={styles.nascard} key={data.id}>
                 <img src={data.imgs} alt={data.name} />
                 <GradientText
