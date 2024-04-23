@@ -9,7 +9,7 @@ import Location from "./Location";
 import Glimpse from "./Glimpse";
 import CelebrityWalkin from "./CelebrityWalkin";
 import HomeCarousel from "../components/HomeCarousel";
-import landingPage from '../assets/images/landingPage.svg';
+import landingPage from '../assets/images/g1.svg';
 const Home: React.FC = () => {
   useEffect(() => {
     document.title = "Home | Highways";
