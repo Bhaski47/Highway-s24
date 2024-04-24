@@ -14,10 +14,11 @@
     flex-wrap: wrap;
     gap: 5rem;
     justify-content: center;
-    /* max-width: 100%; */
+    /* background-color: red; */
 }
 .card{
     padding: 2rem;
+    /* background-color: red; */
     border: 1px solid white;
     display: flex;
     flex-direction: column;
@@ -29,7 +30,8 @@
     position: relative;
     border-radius: 20px;
     padding: 2rem;
-    max-width: 100%;
+    /* background-color: red; */
+    max-width: 80%;
     border: 1px solid #A37F00;
     display: flex;
     flex-direction: column;
@@ -79,9 +81,11 @@
 .nascard >img{
     object-fit: cover;
     transition: all 0.2s ease-in-out;
+    border-radius: 5px;
 }
 .lekhacard >img{
     object-fit: cover;
+    border-radius: 5px;
     transition: all 0.2s ease-in-out;
 }
 
@@ -131,10 +135,28 @@
     .nascard > img {
         width: 300px;
     }
+    .lekhacard{
+        max-width: 77%;
+    }
 }
 
 @media screen and (max-width: 480px) {
+    .bhcard{
+        max-width: 100%;
+    }
     .bhcard > img {
-        width: 300px;
+        width: 250px;
+    }
+    .lekhacard{
+        max-width: 77%;
+    }
+    .lekhacard > img {
+        width: 100%;
+    }
+    .nascard{
+        max-width: 100%;
+    }
+    .nascard > img {
+        width: 250px;
     }
 }
