@@ -67,7 +67,7 @@ const BuyPass: React.FC = () => {
                     fontWeight: "normal",
                   }}
                 >
-                  ₹699
+                  ₹599
                 </span>
               </h4>
               <h4 className={styles.current_price}>
