@@ -8,40 +8,40 @@ const EventItem: React.FC<{
   id: string;
 }> = (props) => {
   return (
-    <Link to={`/events/${props.id}`} style={{ textDecoration: "none" }}>
-      <div
-        className={styles.department}
-        style={{ backgroundImage: `url(${props.image})` }}
-      >
-      <div className={styles.blackBackground}/>
-        <div className={styles.nameDiv}>
-          <div className={styles.topBar}>
-            <p>HIGHWAYS' 24</p>
-            {/* <div className={styles.logoContainer} style={{textAlign:'end'}}>
+    // <Link to={`/events/${props.id}`} style={{ textDecoration: "none" }}>
+    //   <div
+    //     className={styles.department}
+    //     style={{ backgroundImage: `url(${props.image})` }}
+    //   >
+    //   <div className={styles.blackBackground}/>
+    //     <div className={styles.nameDiv}>
+    //       <div className={styles.topBar}>
+    //         <p>HIGHWAYS' 24</p>
+    //         {/* <div className={styles.logoContainer} style={{textAlign:'end'}}>
+    //             <img src={logo} alt="Tech Fest" className={styles.logo} />
+    //         </div> */}
+    //       </div>
+    //       <p className={styles.title}>{props.name}</p>
+    //       <p className={styles.know}>Know More</p>
+    //     </div>
+    //   </div>
+    // </Link>
+    <div
+      className={styles.department}
+      style={{ backgroundImage: `url(${props.image})` }}
+    >
+      <div className={styles.blackBackground} />
+      <div className={styles.nameDiv}>
+        <div className={styles.topBar}>
+          {/* <p>HIGHWAYS' 24</p> */}
+          {/* <div className={styles.logoContainer} style={{textAlign:'end'}}>
                 <img src={logo} alt="Tech Fest" className={styles.logo} />
             </div> */}
-          </div>
-          <p className={styles.title}>{props.name}</p>
-          <p className={styles.know}>Know More</p>
         </div>
+        {/* <p className={styles.title}>{props.name}</p> */}
+        {/* <p className={styles.know}>Know More</p> */}
       </div>
-    </Link>
-      // <div
-      //   className={styles.department}
-      //   style={{ backgroundImage: `url(${props.image})` }}
-      // >
-      // <div className={styles.blackBackground}/>
-      //   <div className={styles.nameDiv}>
-      //     <div className={styles.topBar}>
-      //       <p>HIGHWAYS' 24</p>
-      //       {/* <div className={styles.logoContainer} style={{textAlign:'end'}}>
-      //           <img src={logo} alt="Tech Fest" className={styles.logo} />
-      //       </div> */}
-      //     </div>
-      //     <p className={styles.title}>{props.name}</p>
-      //     <p className={styles.know}>Know More</p>
-      //   </div>
-      // </div>
+    </div>
   );
 };
 
