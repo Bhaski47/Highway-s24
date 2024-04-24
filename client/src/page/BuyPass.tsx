@@ -202,7 +202,7 @@ const BuyPass: React.FC = () => {
                   <p style={{fontFamily:"Poppins", color:"gray", fontSize:"smaller"}}>Note:</p>
                   <p style={{fontFamily:"Poppins", color:"gray", fontSize:"smaller"}}>Please provide a valid email address for receiving the tickets.</p>
                   {/* <br /> */}
-                  <p style={{fontFamily:"Poppins", color:"gray", fontSize:"smaller"}}>Utilize the SVCE Official Email ID to avail the offer.</p>
+                  {/* <p style={{fontFamily:"Poppins", color:"gray", fontSize:"smaller"}}>Utilize the SVCE Official Email ID to avail the offer.</p> */}
                   <br />
                   <input
                     type="submit"
