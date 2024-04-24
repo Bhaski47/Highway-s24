@@ -37,22 +37,45 @@
   font-weight: 800;
   -webkit-font-smoothing: antialiased;
   font-size: 5vw;
+  background-clip: text;
+  background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+    color: var(--color-background);
+    font-weight: var(--font-weight);
+    letter-spacing: var(--letter-spacing);
+    padding: calc(var(--stroke-width) / 2);
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: var(--stroke-width);
+    animation: moveBackground 5s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+      background-size: 400% 100%;
+      background-position: 0% 0;
+  }
+
+  100% {
+      background-size: 400% 100%;
+      background-position: -300% 0;
+  }
 }
 
 .ticketTitle{
-    background-image: url("../../assets/images/textImage.png");
-  background-repeat: repeat;
+    /* background-image: url("../../assets/images/textImage.png"); */
+  /* background-repeat: repeat; */
   font-family: "Bangers", system-ui;
-  background-position:center;
-  background-size: cover;
-  background-clip: text;
-  -webkit-text-stroke-width: 0.01px;
-  -webkit-text-stroke-color: #61f7ca;
-  -webkit-text-fill-color: transparent;
+  /* background-position:center; */
+  /* background-size: cover; */
+  color: white;
+  /* background-clip: text; */
+  /* -webkit-text-stroke-width: 0.1px; */
+  /* -webkit-text-stroke-color: #61f7ca; */
+  /* -webkit-text-fill-color: transparent; */
   font-weight: bold;
   font-weight: 800;
   -webkit-font-smoothing: antialiased;
   font-size: 3vw;
+  
 }
 
 .orginal_price {

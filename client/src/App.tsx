@@ -14,6 +14,7 @@ import TermsAndConditions from './page/Terms';
 import GetPasses from './page/GetPasses';
 import BuyPass from './page/BuyPass';
 import { useEffect } from "react";
+import TechTeam from "./page/TechTeam";
 const router = createBrowserRouter(
   [
     {
@@ -64,6 +65,15 @@ const router = createBrowserRouter(
     //     </>
     //   ),
     // },
+    {
+      path: "/team",
+      element: (
+        <>
+          <TechTeam />
+          <Footer />
+        </>
+      ),
+    },
     {
       path: "/events/:eventId",
       element: <EventInfo />,
