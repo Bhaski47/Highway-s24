@@ -1,0 +1,29 @@
+.text_container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .bordered_text {
+    display: inline;
+    position: relative;
+    font-size: 48px;
+    border: 2px solid transparent; /* initial border color */
+    padding: 10px 20px;
+    animation: textBorder 2s linear infinite alternate; /* adjust animation duration and timing here */
+  }
+  
+  @keyframes textBorder {
+    0% {
+      border-color: red; /* start color */
+      left: 0;
+    }
+    50% {
+      border-color: blue; /* middle color */
+      left: 5px;
+    }
+    100% {
+      border-color: green; /* end color */
+      left: 0;
+    }
+  }
+  

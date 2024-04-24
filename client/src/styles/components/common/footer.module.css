@@ -136,6 +136,9 @@
     .addressPara {
       width: 12rem;
     }
+    .techteam{
+      top: -20px;
+    }
     .menuContactsDiv {
       gap: 1rem;
       /* font-size: small; */

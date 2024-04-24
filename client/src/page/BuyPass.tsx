@@ -44,7 +44,7 @@ const BuyPass: React.FC = () => {
                   }}
                 >
                   {/* {pass === "day1" ? "₹700" : pass === "day2" ? "₹800" : "₹900"} */}
-                  ₹900
+                  ₹999
                 </span>
               </h4>
               <br />
@@ -83,16 +83,17 @@ const BuyPass: React.FC = () => {
               </h4>
               <br />
               <h5 className={styles.description}>
-                About Highways m It is a long established fact that a reader
-                will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it
-                has a more-or-less normal distribution of letters, as opposed to
-                using 'Content here, content here', making it look like readable
-                English. Many desktop publishing packages and web page editors
-                now use Lorem Ipsum as their default model text, and a search
-                for 'lorem ipsum' will uncover many web sites still in their
-                infancy. Various versions have evolved over the years, sometimes
-                by accident, sometimes on purposoney details
+                Unlock the full spectrum of cultural delights with the
+                Highways'24 combo pass. Take advantage of our special early bird
+                offer priced at just 599 for a limited time, granting access to
+                both days of the event. Immerse yourself in a rich tapestry of
+                activities, including walk-ins, dynamic concerts, uproarious
+                stand-up shows, and exhilarating DJ performances. What's more,
+                students can enjoy exclusive entry to classic events with the
+                Highways'24 combo pass, ensuring a comprehensive cultural
+                experience. Don't let this opportunity slip away - secure your
+                combo pass now and prepare for two days of unforgettable
+                entertainment!
               </h5>
               <br />
               <br />
@@ -199,8 +200,25 @@ const BuyPass: React.FC = () => {
                   {/* <br /> */}
                 </div>
                 <center>
-                  <p style={{fontFamily:"Poppins", color:"gray", fontSize:"smaller"}}>Note:</p>
-                  <p style={{fontFamily:"Poppins", color:"gray", fontSize:"smaller"}}>Please provide a valid email address for receiving the tickets.</p>
+                  <p
+                    style={{
+                      fontFamily: "Poppins",
+                      color: "gray",
+                      fontSize: "smaller",
+                    }}
+                  >
+                    Note:
+                  </p>
+                  <p
+                    style={{
+                      fontFamily: "Poppins",
+                      color: "gray",
+                      fontSize: "smaller",
+                    }}
+                  >
+                    Please provide a valid email address for receiving the
+                    tickets.
+                  </p>
                   {/* <br /> */}
                   {/* <p style={{fontFamily:"Poppins", color:"gray", fontSize:"smaller"}}>Utilize the SVCE Official Email ID to avail the offer.</p> */}
                   <br />

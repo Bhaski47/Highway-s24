@@ -70,7 +70,7 @@ const GetPasses: React.FC = () => {
                 </h4>
                 <p className={styles.original_price}>
                   Original Price :{" "}
-                  <span style={{ textDecoration: "line-through" }}>₹ 900</span>
+                  <span style={{ textDecoration: "line-through" }}>₹ 999</span>
                 </p>
                 <h3 className={styles.current_price}>
                   SVCE Students : <span style={{ color: "yellow" }}>₹ 599</span>
