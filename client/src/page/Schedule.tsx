@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Header from "../components/common/Header";
 import style from "../styles/pages/schedule.module.css";
 
@@ -7,6 +7,8 @@ const Schedule: React.FC = () => {
     window.scrollTo(0, 0);
     document.title = "Schedule | Highways";
   });
+
+  const [selectedDay, setSelectedDay] = useState(1);
 
   const day1: {
     name: string;
@@ -37,40 +39,64 @@ const Schedule: React.FC = () => {
       <Header />
       <div className={style.container}>
         <h1 className={style.heading}>Schedule</h1>
-        <h1 className={style.days}>Day 1</h1>
-        <div className={style.details}>
-          {day1.map((item, index) => (
-            <div className={style.edu} key={index}>
-              <div className={style.align}>
-                <p>{item.time}</p>
-                <p>{item.name}</p>
-                {index !== day1.length - 1 && (
-                  <div className={style.line}></div>
-                )}
-              </div>
-              {index !== day1.length - 1 && (
-                <div className={style.dot}></div>
-              )}
+        <center>
+          <div className={style.toggle}>
+            <div
+              className={style.day}
+              onClick={() => {
+                setSelectedDay(1);
+              }}
+            >
+              Day 1
             </div>
-          ))}
-        </div>
-        <h1 className={style.days}>Day 2</h1>
-        <div className={style.details}>
-          {day2.map((item, index) => (
-            <div className={style.edu} key={index}>
-              <div className={style.align}>
-                <p>{item.time}</p>
-                <p>{item.name}</p>
-                {index !== day2.length - 1 && (
-                  <div className={style.line}></div>
-                )}
-              </div>
-              {index !== day2.length - 1 && (
-                <div className={style.dot}></div>
-              )}
+            <div
+              className={style.day}
+              onClick={() => {
+                setSelectedDay(2);
+              }}
+            >
+              Day 2
             </div>
-          ))}
-        </div>
+            <div
+              className={style.toggle_overlay}
+              style={{
+                transform:
+                  selectedDay === 1 ? "translateX(0)" : "translateX(105%)",
+              }}
+            ></div>
+          </div>
+        </center>
+        {selectedDay === 1 ? (
+          <div className={style.details}>
+            {day1.map((item, index) => (
+              <div className={style.edu} key={index}>
+                <div className={style.align}>
+                  <p>{item.time}</p>
+                  <p>{item.name}</p>
+                  {index !== day1.length - 1 && (
+                    <div className={style.line}></div>
+                  )}
+                </div>
+                {index !== day1.length - 1 && <div className={style.dot}></div>}
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className={style.details}>
+            {day2.map((item, index) => (
+              <div className={style.edu} key={index}>
+                <div className={style.align}>
+                  <p>{item.time}</p>
+                  <p>{item.name}</p>
+                  {index !== day2.length - 1 && (
+                    <div className={style.line}></div>
+                  )}
+                </div>
+                {index !== day2.length - 1 && <div className={style.dot}></div>}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </>
   );

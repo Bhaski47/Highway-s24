@@ -17,6 +17,10 @@
   width: 70vw;
 }
 
+.titleHighlight, .title{
+  font-family: "Bangers";
+}
+
 .rev {
   cursor: default;
   font-size: larger;
@@ -45,7 +49,7 @@
 @media screen and (width <= 600px) {
   .rev {
     letter-spacing: 1vw;
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .content > h1 {
@@ -59,7 +63,7 @@
 
   .time {
     letter-spacing: 1vw;
-    font-size: 10px;
+    font-size: 15px;
   }
 
   /* .eventInfo {
@@ -76,9 +80,9 @@
     font-size: 1vw;
     display: flex;
     justify-content: space-around;
-    margin-top: 30%;
+    margin-top: 20%;
     align-items: center;
-    width: 100%;
+    width: 80%;
     column-gap: 1px;
     flex-wrap: wrap;
   }

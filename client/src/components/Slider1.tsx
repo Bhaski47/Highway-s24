@@ -2,7 +2,7 @@ import "@splidejs/splide/css";
 import "@splidejs/splide/css/skyblue";
 import "@splidejs/splide/css/sea-green";
 import "@splidejs/splide/css/core";
-import styles from '../styles/pages/glimpse.module.css'
+import styles from "../styles/pages/glimpse.module.css";
 import Splide from "@splidejs/splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import { useEffect, useState } from "react";
@@ -25,9 +25,9 @@ const Slider1: React.FC = () => {
       }
     };
     updatePerPage();
-    window.addEventListener('resize', updatePerPage);
+    window.addEventListener("resize", updatePerPage);
     return () => {
-      window.removeEventListener('resize', updatePerPage);
+      window.removeEventListener("resize", updatePerPage);
     };
   }, []);
   useEffect(() => {
@@ -36,15 +36,15 @@ const Slider1: React.FC = () => {
       drag: "free",
       focus: "center",
       perPage: perPage,
-      arrows:false,
+      arrows: false,
       pagination: false,
       interval: 2000,
-      autoScroll:{
-        pauseOnHover:false,
-        pauseOnFocus:false
-      }
+      autoScroll: {
+        pauseOnHover: false,
+        pauseOnFocus: false,
+      },
     });
-    splide.mount({AutoScroll});
+    splide.mount({ AutoScroll });
     return () => {
       splide.destroy();
     };
@@ -52,27 +52,27 @@ const Slider1: React.FC = () => {
 
   return (
     <>
-    <div id="splide991" className="splide">
-      <div className="splide__track">
-        <ul className="splide__list">
-          <li className="splide__slide">
-            <img src={arjundas} alt="arjundas" className={styles.img} />
-          </li>
-          <li className="splide__slide">
-            <img src={db3} alt="db3" className={styles.img}/>
-          </li>
-          <li className="splide__slide">
-            <img src={arjun2} alt="arjun2" className={styles.img}/>
-          </li>
-          <li className="splide__slide">
-            <img src={andrea2} alt="andrea2" className={styles.img}/>
-          </li>
-          <li className="splide__slide">
-            <img src={baba2} alt="baba2" className={styles.img}/>
-          </li>
-        </ul>
+      <div id="splide991" className="splide">
+        <div className="splide__track">
+          <ul className="splide__list">
+            <li className="splide__slide">
+              <img src={arjundas} alt="arjundas" className={styles.img} />
+            </li>
+            <li className="splide__slide">
+              <img src={db3} alt="db3" className={styles.img} />
+            </li>
+            <li className="splide__slide">
+              <img src={arjun2} alt="arjun2" className={styles.img} />
+            </li>
+            <li className="splide__slide">
+              <img src={andrea2} alt="andrea2" className={styles.img} />
+            </li>
+            <li className="splide__slide">
+              <img src={baba2} alt="baba2" className={styles.img} />
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
     </>
   );
 };

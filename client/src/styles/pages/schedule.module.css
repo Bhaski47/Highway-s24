@@ -2,6 +2,45 @@
   padding-top: 8rem;
   font-family: "Poppins";
 }
+
+.toggle{
+  margin: 2rem 0;
+  position: relative;
+  display: flex;
+  background-color: aliceblue;
+  width: 16vw;
+  border-radius: 1000px;
+  align-items: center;
+  justify-content: space-around;
+  height: 6vh;
+}
+
+.toggle_overlay{
+  left: 5px;
+  height: 5vh;
+  width: 7.5vw;
+  border-radius: 1000px;
+  background-color: black;
+  position: absolute;
+  transition: all ease-in-out 300ms;
+}
+
+.day{
+  -webkit-tap-highlight-color: transparent;
+  color: white;
+  mix-blend-mode: difference;
+  font-size: 1.5vw;
+  font-family: "Bangers";
+  z-index: 2;
+  width: 7.5vw;
+  height: 5vh;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
 .days{
   text-align: center;
   margin-bottom: 2rem;
@@ -101,6 +140,38 @@
 
   100% {
     opacity: 0;
+  }
+}
+
+@media screen and (width < 1600px) {
+  .toggle{
+    width: 35vw;
+  }
+  
+  .toggle_overlay{
+    width: 16.5vw;
+  }
+  
+  .day{
+    width: 16.5vw;
+    font-size: 3vw;
+  }
+}
+
+@media screen and (width < 800px) {
+  .toggle{
+    width: 45vw;
+  }
+  
+  .toggle_overlay{
+    width: 20.8vw;
+  }
+  
+  .day{
+    user-select: none;
+    width: 26.5vw;
+    font-size: 5vw;
+
   }
 }
 
