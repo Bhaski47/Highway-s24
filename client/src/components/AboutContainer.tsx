@@ -13,7 +13,7 @@ const AboutContainer: React.FC = () => {
           </div>
           <div>
             <h1>80 +</h1>
-            <h1>College</h1>
+            <h1>Colleges</h1>
           </div>
           <div>
             <h1>20 +</h1>
@@ -21,7 +21,7 @@ const AboutContainer: React.FC = () => {
           </div>
           <div>
             <h1>20000 +</h1>
-            <h1>Price Worth</h1>
+            <h1>Worth of prizes</h1>
           </div>
         </div>
       </div>
