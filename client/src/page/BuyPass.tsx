@@ -31,6 +31,7 @@ const BuyPass: React.FC = () => {
               {/* <h1 className={styles.highwaysText}>Highways' 24</h1> */}
               <h1 className={styles.highwaysText}>Highways' 24</h1>
               <h1 className={styles.ticketTitle}>Early Bird Ticket</h1>
+              <p style={{fontFamily:"Poppins", fontSize:"small", color:"gray"}}>( Inclusive of Classical Events, Proshows )</p>
               <br />
               <p>Book your tickets here</p>
               <br />
@@ -85,7 +86,7 @@ const BuyPass: React.FC = () => {
               <h5 className={styles.description}>
                 Unlock the full spectrum of cultural delights with the
                 Highways'24 combo pass. Take advantage of our special early bird
-                offer priced at just 599 for a limited time, granting access to
+                offer price for limited time, granting access to
                 both days of the event. Immerse yourself in a rich tapestry of
                 activities, including walk-ins, dynamic concerts, uproarious
                 stand-up shows, and exhilarating DJ performances. What's more,
