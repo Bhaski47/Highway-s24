@@ -20,7 +20,7 @@ const AboutContainer: React.FC = () => {
             <h1>Events</h1>
           </div>
           <div>
-            <h1>100000 +</h1>
+            <h1>20000 +</h1>
             <h1>Price Worth</h1>
           </div>
         </div>
