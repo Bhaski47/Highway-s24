@@ -5,6 +5,7 @@ import may_8 from "../assets/images/may_8.png";
 import combo from "../assets/images/combo.png";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { passesData } from "../data/passesData";
 
 const BuyPass: React.FC = () => {
   useEffect(() => {
@@ -12,7 +13,10 @@ const BuyPass: React.FC = () => {
     document.title = "Buy Passes | Technoways";
   }, []);
 
-  const { pass } = useParams();
+  const { passId } = useParams();
+  console.log(passId);
+  const pass = passesData.find((pass) => pass.id === passId);
+  console.log(pass);
   return (
     <>
       <Header />
@@ -21,80 +25,88 @@ const BuyPass: React.FC = () => {
           <h1 className={styles.heading}>Buy Your Passes</h1>
           <div className={styles.passContainer}>
             <center>
-              <img
-                src={pass === "day1" ? may_7 : pass === "day2" ? may_8 : combo}
-                className={styles.passImage}
-                alt=""
-              />
+              <img src={pass?.image} className={styles.passImage} alt="" />
             </center>
             <div className={styles.details}>
-              {/* <h1 className={styles.highwaysText}>Highways' 24</h1> */}
               <h1 className={styles.highwaysText}>Highways' 24</h1>
-              <h1 className={styles.ticketTitle}>Early Bird Ticket</h1>
-              <p style={{fontFamily:"Poppins", fontSize:"small", color:"gray"}}>( Inclusive of Classical Events, Proshows )</p>
+              <h1 className={styles.ticketTitle}>{pass?.name}</h1>
+              <p
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "small",
+                  color: "gray",
+                }}
+              >
+                ( Inclusive of Classical Events, Proshows )
+              </p>
               <br />
               <p>Book your tickets here</p>
               <br />
-              <h4 className={styles.orginal_price}>
-                Orginal Price:{" "}
-                <span
-                  style={{
-                    color: "red",
-                    textDecoration: "line-through",
-                    fontWeight: "normal",
-                  }}
-                >
-                  {/* {pass === "day1" ? "₹700" : pass === "day2" ? "₹800" : "₹900"} */}
-                  ₹999
-                </span>
-              </h4>
-              <br />
-              {/* <h4 className={styles.current_price}>
-                Current Price:{" "}
-                <span
-                  style={{
-                    color: "yellow",
-                    fontWeight: "normal",
-                  }}
-                >
-                  {pass === "day1" ? "₹550" : pass === "day2" ? "₹650" : "₹750"}
-                </span>
-              </h4> */}
-              <h4 className={styles.current_price}>
-                SVCE Students:{" "}
-                <span
-                  style={{
-                    color: "yellow",
-                    fontWeight: "normal",
-                  }}
-                >
-                  ₹599
-                </span>
-              </h4>
-              <h4 className={styles.current_price}>
-                Other College Students:{" "}
-                <span
-                  style={{
-                    color: "yellow",
-                    fontWeight: "normal",
-                  }}
-                >
-                  ₹799
-                </span>
-              </h4>
+              {passId === "alumni" ? (
+                <>
+                  <h4 className={styles.current_price}>
+                    Price:{" "}
+                    <span
+                      style={{
+                        color: "yellow",
+                        fontWeight: "normal",
+                      }}
+                    >
+                      ₹{pass?.price}
+                    </span>
+                  </h4>
+                </>
+              ) : (
+                <>
+                  <h4 className={styles.orginal_price}>
+                    Orginal Price:{" "}
+                    <span
+                      style={{
+                        color: "red",
+                        textDecoration: "line-through",
+                        fontWeight: "normal",
+                      }}
+                    >
+                      ₹{pass?.original_price}
+                    </span>
+                  </h4>
+                  <br />
+                  <h4 className={styles.current_price}>
+                    SVCE Students:{" "}
+                    <span
+                      style={{
+                        color: "yellow",
+                        fontWeight: "normal",
+                      }}
+                    >
+                      ₹{pass?.svce_price}
+                    </span>
+                  </h4>
+                  <h4 className={styles.current_price}>
+                    Other College Students:{" "}
+                    <span
+                      style={{
+                        color: "yellow",
+                        fontWeight: "normal",
+                      }}
+                    >
+                      ₹{pass?.other_price}
+                    </span>
+                  </h4>
+                </>
+              )}
               <br />
               <h5 className={styles.description}>
                 Unlock the full spectrum of cultural delights with the
                 Highways'24 combo pass. Take advantage of our special early bird
-                offer price for limited time, granting access to
-                both days of the event. Immerse yourself in a rich tapestry of
-                activities, including walk-ins, dynamic concerts, uproarious
-                stand-up shows, and exhilarating DJ performances. What's more,
-                students can enjoy exclusive entry to classic events with the
-                Highways'24 combo pass, ensuring a comprehensive cultural
-                experience. Don't let this opportunity slip away - secure your
-                combo pass now and prepare for two days of unforgettable
-                entertainment!
+                offer price for limited time, granting access to both days of
+                the event. Immerse yourself in a rich tapestry of activities,
+                including walk-ins, dynamic concerts, uproarious stand-up shows,
+                and exhilarating DJ performances. What's more, students can
+                enjoy exclusive entry to classic events with the Highways'24
+                combo pass, ensuring a comprehensive cultural experience. Don't
+                let this opportunity slip away - secure your combo pass now and
+                prepare for two days of unforgettable entertainment!
               </h5>
               <br />
               <br />
@@ -159,31 +171,49 @@ const BuyPass: React.FC = () => {
                     placeholder="Email"
                     required
                   />
-                  {/* <br /> */}
-                  <span>Year:</span>
-                  <input
-                    type="text"
-                    name="year"
-                    placeholder="Year of Study"
-                    required
-                  />
-                  {/* <br /> */}
-                  <span>Reg No:</span>
-                  <input
-                    type="text"
-                    name="regNo"
-                    placeholder="College Register No"
-                    required
-                  />
-                  {/* <br /> */}
-                  <span>College:</span>
-                  <input
-                    type="text"
-                    name="college"
-                    placeholder="College"
-                    required
-                  />
-                  {/* <br /> */}
+                  {passId !== "alumni" ? (
+                    <>
+                      <span>Year:</span>
+                      <input
+                        type="text"
+                        name="year"
+                        placeholder="Year of Study"
+                        required
+                      />
+                    </>
+                  ) : (
+                    <>
+                      {" "}
+                      <>
+                        <span>Batch:</span>
+                        <input
+                          type="text"
+                          name="year"
+                          placeholder="Batch of study"
+                          required
+                        />
+                      </>
+                    </>
+                  )}
+
+                  {passId !== "alumni" ? (
+                    <>
+                      <span>Reg No:</span>
+                      <input
+                        type="text"
+                        name="regNo"
+                        placeholder="College Register No"
+                        required
+                      />
+                      <span>College:</span>
+                      <input
+                        type="text"
+                        name="college"
+                        placeholder="College"
+                        required
+                      />
+                    </>
+                  ) : null}
                   <span>Dept:</span>
                   <input
                     type="text"
@@ -192,7 +222,12 @@ const BuyPass: React.FC = () => {
                     required
                   />
                   {/* <br /> */}
-                  <input type="hidden" name="pass" value={pass} />
+                  <input type="hidden" name="pass" value={passId} />
+                  <input
+                    type="hidden"
+                    name="userType"
+                    value={passId === "alumni" ? "alumni" : "student"}
+                  />
                   <input
                     type="hidden"
                     name="billing_state"

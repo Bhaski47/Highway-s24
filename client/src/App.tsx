@@ -97,7 +97,7 @@ const router = createBrowserRouter(
       ),
     },
     {
-      path: "/buyPass/:pass",
+      path: "/buyPass/:passId",
       element: (
         <>
           <BuyPass />
