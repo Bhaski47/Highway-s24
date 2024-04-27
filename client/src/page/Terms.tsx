@@ -5,7 +5,7 @@ import { useEffect } from "react";
 const TermsAndConditions: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "About | Technoways";
+    document.title = "Terms & Condition | Highways";
   }, []);
   return (
     <>

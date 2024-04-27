@@ -10,7 +10,7 @@ import { passesData } from "../data/passesData";
 const BuyPass: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Buy Passes | Technoways";
+    document.title = "Buy Passes | Highways";
   }, []);
 
   const { passId } = useParams();
