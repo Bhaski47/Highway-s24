@@ -1,11 +1,9 @@
 import styles from "../styles/pages/getPasses.module.css";
 import Header from "../components/common/Header";
-// import may_7 from "../assets/images/may_7.png";
-// import may_8 from "../assets/images/may_8.png";
-import combo from "../assets/images/combo.png";
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import ReactGA from "react-ga4";
+import { passesData } from "../data/passesData";
 
 const GetPasses: React.FC = () => {
   useEffect(() => {
@@ -20,6 +18,42 @@ const GetPasses: React.FC = () => {
         <h1 className={styles.heading}>Buy Your Passes</h1>
         <center>
           <div className={styles.passContainer}>
+            {passesData.map((pass) => {
+              return (
+                <NavLink
+                  to={`/buyPass/${pass.id}`}
+                  style={{ textDecoration: "none" }}
+                >
+                  <div className={styles.pass + " " + styles.combo}>
+                    <img src={pass.image} alt="" className={styles.passImage} />
+                    <h4 className={styles.passTitle}>{pass.name}</h4>
+                    {pass.id !== "alumni" ? (
+                      <>
+                        <p className={styles.original_price}>
+                          Original Price :{" "}
+                          <span style={{ textDecoration: "line-through" }}>
+                            ₹ {pass.original_price}
+                          </span>
+                        </p>
+                        <h3 className={styles.current_price}>
+                          SVCE Students :{" "}
+                          <span style={{ color: "yellow" }}>₹ 599</span>
+                        </h3>
+                        <h3 className={styles.current_price}>
+                          Other College Students :{" "}
+                          <span style={{ color: "yellow" }}>₹ 799</span>
+                        </h3>
+                      </>
+                    ) : (
+                      <h3 className={styles.current_price}>
+                        Price :{" "}
+                        <span style={{ color: "yellow" }}>₹ {pass.price}</span>
+                      </h3>
+                    )}
+                  </div>
+                </NavLink>
+              );
+            })}
             {/* <NavLink to={"/buyPass/day1"} style={{ textDecoration: "none" }} onClick={() => {
                 ReactGA.event({
                   category: 'Button Click',
@@ -56,7 +90,7 @@ const GetPasses: React.FC = () => {
                 </h3>
               </div>
             </NavLink> */}
-            <NavLink to={"/buyPass/combo"} style={{ textDecoration: "none" }} onClick={() => {
+            {/* <NavLink to={"/buyPass/combo"} style={{ textDecoration: "none" }} onClick={() => {
                 ReactGA.event({
                   category: 'Button Click',
                   action: 'Clicked Combo Ticket ',
@@ -79,7 +113,7 @@ const GetPasses: React.FC = () => {
                   Other College Students : <span style={{ color: "yellow" }}>₹ 799</span>
                 </h3>
               </div>
-            </NavLink>
+            </NavLink> */}
           </div>
         </center>
       </div>
