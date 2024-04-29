@@ -48,7 +48,7 @@ const router = createBrowserRouter(
       ),
     },
     {
-      path: "/events",
+      path: "/events/:selectedDay",
       element: (
         <>
           <EventSection />
@@ -75,7 +75,7 @@ const router = createBrowserRouter(
       ),
     },
     {
-      path: "/events/:eventId",
+      path: "/events/:selectedDay/:eventId",
       element: <EventInfo />,
     },
     {

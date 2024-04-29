@@ -5,6 +5,7 @@ import EventItem from "../components/EventItem";
 import { useEffect, useState } from "react";
 import eventsData from "../data/eventsData";
 import ReactGA from "react-ga4";
+import { useNavigate, useParams } from "react-router-dom";
 
 const EventSection: React.FC = () => {
   useEffect(() => {
@@ -12,7 +13,10 @@ const EventSection: React.FC = () => {
     document.title = "Events | Highways";
   }, []);
 
-  const [selectedDay, setSelectedDay] = useState(1);
+  const { selectedDay } = useParams();
+  const navigate = useNavigate();
+
+  // const [selectedDay, setSelectedDay] = useState(1);
 
   return (
     <>
@@ -26,11 +30,11 @@ const EventSection: React.FC = () => {
               className={styles.day}
               onClick={() => {
                 ReactGA.event({
-                  category: 'Button Click',
-                  action: 'Clicked on Day1 page',
-                  label: 'Day1',
+                  category: "Button Click",
+                  action: "Clicked on Day1 page",
+                  label: "Day1",
                 });
-                setSelectedDay(1);
+                navigate("/events/1");
               }}
             >
               Day 1
@@ -39,11 +43,11 @@ const EventSection: React.FC = () => {
               className={styles.day}
               onClick={() => {
                 ReactGA.event({
-                  category: 'Button Click',
-                  action: 'Clicked on Day2 page',
-                  label: 'Day2',
+                  category: "Button Click",
+                  action: "Clicked on Day2 page",
+                  label: "Day2",
                 });
-                setSelectedDay(2);
+                navigate("/events/2");
               }}
             >
               Day 2
@@ -52,13 +56,13 @@ const EventSection: React.FC = () => {
               className={styles.toggle_overlay}
               style={{
                 transform:
-                  selectedDay === 1 ? "translateX(0)" : "translateX(105%)",
+                  selectedDay === "1" ? "translateX(0)" : "translateX(105%)",
               }}
             ></div>
           </div>
         </center>
         <div className={styles.departmentGrid}>
-          {selectedDay === 1
+          {selectedDay === "1"
             ? eventsData
                 .filter((ele) => ele.id.startsWith("1"))
                 .map((ele) => (
@@ -66,19 +70,21 @@ const EventSection: React.FC = () => {
                     image={ele.image}
                     name={ele.name}
                     key={ele.id}
+                    selectedDay={selectedDay}
                     id={ele.id}
                   />
                 ))
             : eventsData
-            .filter((ele) => ele.id.startsWith("2"))
-            .map((ele) => (
-              <EventItem
-                image={ele.image}
-                name={ele.name}
-                key={ele.id}
-                id={ele.id}
-              />
-            ))}
+                .filter((ele) => ele.id.startsWith("2"))
+                .map((ele) => (
+                  <EventItem
+                    image={ele.image}
+                    name={ele.name}
+                    key={ele.id}
+                    selectedDay={selectedDay!}
+                    id={ele.id}
+                  />
+                ))}
         </div>
       </div>
     </>
