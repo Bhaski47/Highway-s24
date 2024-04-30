@@ -52,7 +52,7 @@ const TechTeam: React.FC = () => {
       imgs: lekha,
       name: "Lekhashree Rajesh",
       college: "SVCE",
-      year: "IV rd YEAR - IT Student",
+      year: "IV th YEAR - IT Student",
       role: "Designer",
       portfolioLink: "https://portfolio-bhaskar.vercel.app/",
       linkedInLink: "https://www.linkedin.com/in/lekhashree-rajesh-96565921b/",
