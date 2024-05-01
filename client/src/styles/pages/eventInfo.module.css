@@ -4,7 +4,49 @@
   margin: auto;
   font-family: "Space Grotesk", sans-serif;
 }
-
+.titles{
+  padding: 0.5rem 0.5rem;
+  /* font-size: 3vw; */
+  width: 18%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  backdrop-filter: blur(10px);
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #fff;
+}
+.titles:hover{
+  color: #fff;
+  background-color: #0000004d;
+}
+.titlesReg:hover{
+  color: #fff;
+  background-color: #0000004d;
+}
+.titlesReg{
+  padding: 0.5rem 0.5rem;
+  /* font-size: 3vw; */
+  width: 10%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  backdrop-filter: blur(10px);
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #fff;
+}
 .wrapper {
   display: flex;
   gap: 2rem;
@@ -97,10 +139,8 @@
     animation: marquee 10s linear infinite;
     /* animation-direction: normal; */
   }
-
-  .container {
-    /* width: 100%; */
-    /* margin:  2rem ; */
+  .titles{
+    width: 27%;
   }
   .wrapper {
     &h1 {
@@ -205,6 +245,9 @@
     width: 90%;
     /* margin: 2rem; */
   }
+  .titles{
+    width: 37%;
+  }
   .wrapper {
     display: block;
     /* padding-right: 3rem; */
@@ -242,8 +285,8 @@
     }
   } */
 
-/* @media screen and (width < 530px) {
-    .department {
+@media screen and (width < 530px) {
+    /* .department {
       padding: 12px;
       height: 200px;
       width: 150px;
@@ -263,5 +306,8 @@
     }
     .know {
       font-size: 15px;
+    } */
+    .titles{
+      width: 80%;
     }
-  } */
+  }

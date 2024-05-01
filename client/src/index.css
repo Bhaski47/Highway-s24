@@ -7,3 +7,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* ::-moz-selection {
+  color: red;
+  background: transparent;
+}
+
+::selection {
+  color: red;
+  background: transparent;
+} */
