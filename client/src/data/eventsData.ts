@@ -583,8 +583,8 @@ const eventsData: {
       "It is an online event.",
     ],
     coordinators: [
-      { name: "Arunima", contact: "+91 98400 73069" },
-      { name: "Jhalak", contact: "+91 94442 43793" },
+      { name: "Ram sureth kumar s", contact: "+91 86376 95606" },
+      { name: "Jaya Surya", contact: "+91 80729 83860" },
     ],
     description: [
       "2 Shades of Gray is a photography competition to showcase your creativity and talent in capturing monochromatic moments. Submit your best black and white photographs for a chance to win exciting prizes and get recognized as a talented photographer.",
