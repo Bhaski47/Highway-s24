@@ -70,7 +70,7 @@ const TechTeam: React.FC = () => {
       role: "Developer",
       portfolioLink: "https://naveenakash-portfolio.vercel.app/",
       linkedInLink: "https://www.linkedin.com/in/naveen-akash/",
-      instagramLink: "https://www.instagram.com/__n.a.ve.e.n__/",
+      instagramLink: "https://www.instagram.com/_n.a.ve.e.n_/",
       githubLink: "https://github.com/Naveenakash-k",
       wing: "developer",
       roleName: "techteam",
