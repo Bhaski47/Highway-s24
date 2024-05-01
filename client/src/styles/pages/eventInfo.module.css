@@ -7,6 +7,7 @@
 .titles{
   padding: 0.5rem 0.5rem;
   /* font-size: 3vw; */
+  text-align: center;
   width: 18%;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -139,6 +140,9 @@
     animation: marquee 10s linear infinite;
     /* animation-direction: normal; */
   }
+  .titlesReg{
+    width: 30%;
+  }
   .titles{
     width: 27%;
   }
@@ -245,6 +249,9 @@
     width: 90%;
     /* margin: 2rem; */
   }
+  .titlesReg{
+    width: 25%;
+  }
   .titles{
     width: 37%;
   }
@@ -307,6 +314,9 @@
     .know {
       font-size: 15px;
     } */
+    .titlesReg{
+      width: 50%;
+    }
     .titles{
       width: 80%;
     }
