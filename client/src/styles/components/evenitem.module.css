@@ -1,20 +1,23 @@
 .department {
     font-family: "Space Grotesk", sans-serif;
-    height: 320px;
-    width: 260px;
+    /* height: 320px;
+    width: 260px; */
     background-size: cover;
+    height: 18rem;
+    width: 18rem;
+    background-repeat: no-repeat;
     background-position: center center;
     position: relative;
     transition: all 300ms ease-in-out;
-    border: 2px solid #503938;
-    border-radius: 22px;
+    border: 2px solid #50776b;
+    border-radius: 10px;
     padding: 0 1rem 0 1rem;
   }
   .blackBackground {
     margin: 0 -1rem 0 -1rem;
     border-radius: 22px;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.531);
+    /* background-color: rgba(0, 0, 0, 0.531); */
     width: 100%;
     height: 100%;
   }

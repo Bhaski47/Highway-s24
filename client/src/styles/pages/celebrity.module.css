@@ -6,7 +6,11 @@
     z-index: 944;
     background-color: #0c0c0c;
 }
-
+.imgs{
+    width: 20vw;
+    /* border: 1px solid #09f1b8; */
+    border-radius: 10px;
+}
 .heading {
     text-align: center;
     /* margin-bottom: 5%; */
@@ -17,7 +21,7 @@
 .walkingsContainer {
     display: flex;
     flex-wrap: wrap;
-    max-width: 40vw;
+    max-width: 80vw;
     margin: auto;
     justify-content: center;
     column-gap: 15vw;
@@ -28,10 +32,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 1.5rem;
 }
 
 .walkin>h1 {
-    font-size: 16rem;
+    font-size: 3rem;
     user-select: none;
     text-align: center;
     background-clip: text;
@@ -58,6 +63,7 @@
 }
 
 .walkin>p {
+    margin-top: 1.5rem;
     font-size: 1.5rem;
     text-align: center;
 }

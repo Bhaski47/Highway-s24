@@ -7,6 +7,7 @@ import classIcon from "../assets/images/icons/classroomIcon.png";
 import eventsData from "../data/eventsData";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
+import Footer from "../components/common/Footer";
 // import EventItem from "../components/EventItem";
 
 const EventInfo: React.FC = () => {
@@ -29,7 +30,7 @@ const EventInfo: React.FC = () => {
             <div className={styles.blackBackground} />
             <div className={styles.nameDiv}>
               <div className={styles.topBar}>
-                <p>HIGHWAYS' 24</p>
+                {/* <p>HIGHWAYS' 24</p> */}
               </div>
             </div>
           </div>
@@ -60,13 +61,13 @@ const EventInfo: React.FC = () => {
                 <img src={classIcon} alt="~" width={"18vw"} height={"19vh"} />
                 <h3>{event.venue}</h3>
               </div>
-              <div
+              {/* <div
                 className={styles.text}
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
               >
                 <img src={userIcon} alt="~" width={"18vw"} height={"19vh"} />
                 <h3>{89}</h3>
-              </div>
+              </div> */}
             </div>
             <h2>Description</h2>
             {event.description.map((des) => (
@@ -80,6 +81,7 @@ const EventInfo: React.FC = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

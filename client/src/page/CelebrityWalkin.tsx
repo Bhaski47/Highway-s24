@@ -1,7 +1,9 @@
 // import { useEffect } from "react";
 import Header from "../components/common/Header";
 import styles from "../styles/pages/celebrity.module.css";
-
+import vaisagh from "../assets/images/walkings/Highways'24_vaisagh1.png";
+import dj from "../assets/images/walkings/Highways'24_DJLash.png";
+import joke from "../assets/images/walkings/1.png";
 const CelebrityWalkin:React.FC=()=>{
     // useEffect(()=>{
     //     window.scrollTo(0, 0);
@@ -9,29 +11,29 @@ const CelebrityWalkin:React.FC=()=>{
     // },[])
     const walkings:{
         id:number,
-        img:String,
-        name:String
+        img:string,
+        name:string
     }[]=[
         {
         id:1,
-        img:"?",
+        img:vaisagh,
         name:"Walk In Day 1"
     },
         {
         id:2,
-        img:"?",
+        img:joke,
         name:"Walk In Day 2"
     },
         {
         id:3,
-        img:"?",
+        img:dj,
         name:"Concert Celebrity"
     },
-        {
-        id:4,
-        img:"?",
-        name:"Judge 1"
-    },
+    //     {
+    //     id:4,
+    //     img:"?",
+    //     name:"Judge 1"
+    // },
 ]
     return(
         <>
@@ -41,8 +43,9 @@ const CelebrityWalkin:React.FC=()=>{
             <div className={styles.walkingsContainer}>
                 {walkings.map((data)=>(
                     <div className={styles.walkin} key={data.id}>
-                        <h1 key={data.id}>{data.img}</h1>
-                        <p>{data.name}</p>
+                        {/* <h1 key={data.id}>{data.img}</h1> */}
+                        <img src={data.img} className={styles.imgs} alt="?" />
+                        <h1>{data.name}</h1>
                     </div>
                 ))}
             </div>
