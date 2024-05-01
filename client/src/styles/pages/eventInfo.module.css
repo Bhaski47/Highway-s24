@@ -25,6 +25,7 @@
   background-color: rgba(97, 247, 202, 0.103);
   backdrop-filter: blur(10px);
   background-size: 100% 100%;
+  min-height: 80vh;
   width: 100%;
   padding: 2rem 2rem 2rem 2rem;
   line-height: 1.7rem;

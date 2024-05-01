@@ -23,17 +23,15 @@ const EventInfo: React.FC = () => {
       <Header />
       <div className={styles.container}>
         <div className={styles.wrapper}>
-          <div
+          {/* <div
             className={styles.department}
             style={{ backgroundImage: `url(${event.image})` }}
           >
             <div className={styles.blackBackground} />
             <div className={styles.nameDiv}>
-              <div className={styles.topBar}>
-                {/* <p>HIGHWAYS' 24</p> */}
-              </div>
+              <div className={styles.topBar}><p>HIGHWAYS' 24</p></div>
             </div>
-          </div>
+          </div> */}
           <div className={styles.contextContainer}>
             <h1 style={{ textAlign: "center", paddingBottom: "30px" }}>
               {event.name}
@@ -81,7 +79,7 @@ const EventInfo: React.FC = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
