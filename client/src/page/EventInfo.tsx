@@ -22,21 +22,21 @@ const EventInfo: React.FC = () => {
       <Header />
       <div className={styles.container}>
         <div className={styles.wrapper}>
-        <div
-          className={styles.department}
-          style={{ backgroundImage: `url(${event.image})` }}
-        >
-          <div className={styles.blackBackground} />
-          <div className={styles.nameDiv}>
-            <div className={styles.topBar}>
-              <p>HIGHWAYS' 24</p>
+          <div
+            className={styles.department}
+            style={{ backgroundImage: `url(${event.image})` }}
+          >
+            <div className={styles.blackBackground} />
+            <div className={styles.nameDiv}>
+              <div className={styles.topBar}>
+                <p>HIGHWAYS' 24</p>
+              </div>
             </div>
           </div>
-        </div>
           <div className={styles.contextContainer}>
-          <h1 style={{ textAlign: "center", paddingBottom: "30px" }}>
-            {event.name}
-          </h1>
+            <h1 style={{ textAlign: "center", paddingBottom: "30px" }}>
+              {event.name}
+            </h1>
             <p></p>
             <div className={styles.details}>
               <div
@@ -70,9 +70,11 @@ const EventInfo: React.FC = () => {
             </div>
             <h2>Description</h2>
             {event.description.map((des) => (
-              <p>{des}</p>
+              <>
+                <p>• {des}</p>
+                <br />
+              </>
             ))}
-            <br />
             <h2>Event Coordinator</h2>
             <p>{`${event.coordinators[0].name}  ${event.coordinators[0].contact}`}</p>
           </div>

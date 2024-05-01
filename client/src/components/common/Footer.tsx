@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
                 className={({ isActive }) =>
                   isActive ? styles.active : styles.inactive
                 }
-                to={"/events"}
+                to={"/events/1"}
               >
                 Events
               </NavLink>
