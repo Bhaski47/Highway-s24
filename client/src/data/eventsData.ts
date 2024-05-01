@@ -15,6 +15,7 @@ import greenscreen from "../assets/images/departments/GreenScreenmin.webp";
 import lasertag from "../assets/images/departments/LaserTag-min.webp";
 import mrms from "../assets/images/departments/MR_MsHighwaysmin.webp";
 import danceevent from "../assets/images/departments/MusicClub-BattleofBandsmin.webp";
+import battlebands from "../assets/images/departments/BattleofBandsmin.webp";
 import twoshades from "../assets/images/departments/PhotographyClub-TwoShadesofGremin.webp";
 import escapeasylum from "../assets/images/departments/ScienceClubEscapeAsylum-min.webp";
 import shipwreck from "../assets/images/departments/ShipWreckmin.webp";
@@ -38,7 +39,7 @@ const eventsData: {
   coordinators: { name: string; contact: string }[];
 }[] = [
   {
-    image: danceevent,
+    image: battlebands,
     id: "1.1",
     rules: [],
     name: "Battle of Bands",
