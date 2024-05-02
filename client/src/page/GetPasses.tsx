@@ -37,11 +37,11 @@ const GetPasses: React.FC = () => {
                         </p>
                         <h3 className={styles.current_price}>
                           SVCE Students :{" "}
-                          <span style={{ color: "yellow" }}>₹ 599</span>
+                          <span style={{ color: "yellow" }}>₹ {pass.svce_price}</span>
                         </h3>
                         <h3 className={styles.current_price}>
                           Other College Students :{" "}
-                          <span style={{ color: "yellow" }}>₹ 799</span>
+                          <span style={{ color: "yellow" }}>₹ {pass.other_price}</span>
                         </h3>
                       </>
                     ) : (

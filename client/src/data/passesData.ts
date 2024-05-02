@@ -19,10 +19,10 @@ export const passesData = [
   // },
   {
     id: "combo",
-    name: "HIGHWAYS’ 24 EARLY BIRD - TICKET",
-    original_price: "900",
-    svce_price: "599",
-    other_price: "799",
+    name: "HIGHWAYS’ 24 TICKET",
+    original_price: "999",
+    svce_price: "699",
+    other_price: "899",
     image: combo
   },
   {
