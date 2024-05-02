@@ -1,5 +1,5 @@
-import may_7 from "../assets/images/may_7.png";
-import may_8 from "../assets/images/may_8.png";
+// import may_7 from "../assets/images/may_7.png";
+// import may_8 from "../assets/images/may_8.png";
 import combo from "../assets/images/combo.png";
 
 export const passesData = [

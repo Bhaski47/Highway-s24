@@ -1,9 +1,10 @@
 // import { useEffect } from "react";
 import Header from "../components/common/Header";
 import styles from "../styles/pages/celebrity.module.css";
-import vaisagh from "../assets/images/walkings/Highways'24_vaisagh1.png";
-import dj from "../assets/images/walkings/Highways'24_DJLash.png";
-import joke from "../assets/images/walkings/1.png";
+import vaisagh from "../assets/images/walkings/Highways'24_vaisagh1.webp";
+import dj from "../assets/images/walkings/Highways'24_DJLash.webp";
+import joke from "../assets/images/walkings/1.webp";
+import vj from "../assets/images/walkings/Highways'24-VJSiddhuvlogs.webp";
 const CelebrityWalkin: React.FC = () => {
   // useEffect(()=>{
   //     window.scrollTo(0, 0);
@@ -31,7 +32,7 @@ const CelebrityWalkin: React.FC = () => {
     },
     {
       id: 4,
-      img: "?",
+      img: vj,
       name: "Walk In Day 1",
     },
     {

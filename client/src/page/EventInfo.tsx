@@ -2,7 +2,7 @@ import Header from "../components/common/Header";
 import styles from "../styles/pages/eventInfo.module.css";
 import calIcon from "../assets/images/icons/calIcon.png";
 import timeIcon from "../assets/images/icons/timeIcon.png";
-import userIcon from "../assets/images/icons/userIcon.png";
+// import userIcon from "../assets/images/icons/userIcon.png";
 import classIcon from "../assets/images/icons/classroomIcon.png";
 import eventsData from "../data/eventsData";
 import { useParams } from "react-router-dom";
