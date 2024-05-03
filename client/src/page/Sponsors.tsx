@@ -31,7 +31,7 @@ const Sponsors: React.FC = () => {
     <>
       <Header />
       <div className={styles.container} id="sponsors">
-      <Confetti width={width} height={height} style={{position:"fixed",zIndex:"44"}} recycle={false}/>
+        <Confetti width={width} height={height} recycle={false} />
         <h1 className={styles.heading}>OUR SPONSORS</h1>
         <div className={styles.sponsorContainer}>
           {sponsor.map((data) => (
