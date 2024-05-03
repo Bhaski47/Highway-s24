@@ -319,7 +319,32 @@ const eventsData: {
       "An intercollege Shortfilm competition where the qualified Shortfilms are shotlisted screened and judged receiving a cash prize and certificates.",
     ],
   },
-
+  {
+    image: twoshades,
+    id: "1.18",
+    name: "2 SHADES OF GREY",
+    date: "7th May",
+    time: "10.30AM-11.30AM",
+    venue: "Block 2 - 1st floor",
+    regLink:"https://forms.gle/AGunWGwBotD8HxBf8",
+    rules: [
+      "Themes will be given ON-SPOT.",
+      "The participants are required to submit 1 Monochrome/Grayscale photo.",
+      "Editing is strictly prohibited. Basic colour correction is allowed.",
+      "Mobile photography is allowed. ",
+      "Kindly bring your own Camera / Mobile.",
+      "Photos must be taken only inside the SVCE CAMPUS.",
+    ],
+    coordinators: [
+      { name: "Ram sureth kumar s", contact: "+91 86376 95606" },
+      { name: "Jaya Surya", contact: "+91 80729 83860" },
+    ],
+    description: [
+      "2 Shades of Gray is a photography competition to showcase your creativity and talent in capturing monochromatic moments. Submit your best black and white photographs for a chance to win exciting prizes and get recognized as a talented photographer.",
+      "Show us how you can play with contrasts, highlights, and shadows to create a captivating image. The best photos will be featured on the Photo Club Instagram Handle. So, grab your cameras, experiment with different techniques, and show us your best work in black and white photography.",
+      "Good luck!",
+    ],
+  },
   {
     image: greenscreen,
     id: "2.1",
@@ -567,30 +592,6 @@ const eventsData: {
       // { name: "Jhalak", contact: "+91 94442 43793" },
     ],
     description: [],
-  },
-  {
-    image: twoshades,
-    id: "2.15",
-    name: "2 SHADES OF GREY",
-    date: "8th May ",
-    time: "10.00AM-11.00AM",
-    venue: "Online Event",
-    regLink:"On-Spot Registration",
-    rules: [
-      "The participants are required to submit 1 Monochrome/Grayscale photos.",
-      "Editing is strictly prohibited. Basic color correction is allowed.",
-      "Mobile photography is allowed.",
-      "It is an online event.",
-    ],
-    coordinators: [
-      { name: "Ram sureth kumar s", contact: "+91 86376 95606" },
-      { name: "Jaya Surya", contact: "+91 80729 83860" },
-    ],
-    description: [
-      "2 Shades of Gray is a photography competition to showcase your creativity and talent in capturing monochromatic moments. Submit your best black and white photographs for a chance to win exciting prizes and get recognized as a talented photographer.",
-      "Show us how you can play with contrasts, highlights, and shadows to create a captivating image. The best photos will be featured on the Photo Club Instagram Handle. So, grab your cameras, experiment with different techniques, and show us your best work in black and white photography.",
-      "Good luck!",
-    ],
   },
 ];
 
