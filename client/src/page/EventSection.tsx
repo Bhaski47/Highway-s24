@@ -2,7 +2,7 @@ import styles from "../styles/pages/eventsection.module.css";
 import Header from "../components/common/Header";
 import EventItem from "../components/EventItem";
 // import departmentsData from "../data/departmentsData";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import eventsData from "../data/eventsData";
 import ReactGA from "react-ga4";
 import { useNavigate, useParams } from "react-router-dom";

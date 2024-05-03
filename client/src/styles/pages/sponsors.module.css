@@ -1,4 +1,3 @@
-
 .container {
   padding-top: 8rem;
   padding-bottom: 8vh;
@@ -7,13 +6,16 @@
   background-color: #0c0c0c;
 }
 
-.sponsorContainer > h1{
-  font-size: 96px;
-  /* font-family: 'Fira Mono', monospace; */
+.sponsorContainer h1{
+  font-size: 76px;
   letter-spacing: -7px;
   animation: glitch 1s linear infinite;
 }
-
+.sponsorContainer > div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 @keyframes glitch{
   2%,64%{
     transform: translate(2px,0) skew(0deg);
@@ -26,14 +28,14 @@
   }
 }
 
-.sponsorContainer > h1:before,
-.sponsorContainer > h1:after{
+.sponsorContainer h1:before,
+.sponsorContainer h1:after{
   content: attr(title);
   position: absolute;
   left: 0;
 }
 
-.sponsorContainer > h1:before{
+.sponsorContainer h1:before{
   animation: glitchTop 1s linear infinite;
   clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
@@ -51,7 +53,7 @@
   }
 }
 
-.sponsorContainer > h1:after{
+.sponsorContainer h1:after{
   animation: glitchBotom 1.5s linear infinite;
   clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
@@ -81,12 +83,15 @@
   letter-spacing: 0.2vw;
   text-align: center;
 }
-
+.sponsorContainer img{
+  width: 30%;
+}
 .sponsorContainer {
+  position: relative;
+  z-index: 747;
   min-height: 50vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
 /* .sponsorContainer > h1 {
@@ -119,11 +124,13 @@
     justify-content: center;
     align-items: center;
   }
-
-  .sponsorContainer > h1 {
+  .sponsorContainer img{
+    width: 60%;
+  }
+  .sponsorContainer h1 {
     text-align: center;
-    font-size: 13vw;
+    font-size: 10vw;
     letter-spacing: -3px;
-    font-family: "Abril Fatface";
+    /* font-family: "Abril Fatface"; */
   }
 }

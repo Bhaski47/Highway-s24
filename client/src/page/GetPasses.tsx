@@ -23,6 +23,13 @@ const GetPasses: React.FC = () => {
                 <NavLink
                   to={`/buyPass/${pass.id}`}
                   style={{ textDecoration: "none" }}
+                  onClick={() => {
+                    ReactGA.event({
+                      category: "Button Click",
+                      action: `Clicked on ${pass.id} Ticket`,
+                      label: "Ticket",
+                    });
+                  }}
                 >
                   <div className={styles.pass + " " + styles.combo}>
                     <img src={pass.image} alt="" className={styles.passImage} />
