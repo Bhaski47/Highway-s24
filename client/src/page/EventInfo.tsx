@@ -77,37 +77,36 @@ const EventInfo: React.FC = () => {
             <h2>Event Coordinator</h2>
             <p>{`${event.coordinators[0].name}  ${event.coordinators[0].contact}`}</p>
             <br />
-            {
-              event.rules &&
+            {event.rules && (
               <div>
                 <h2>Rules</h2>
-                  {event.rules.map((data,index)=>(
-                <ul key={index}>
-                  <p>• {data}</p>
-                </ul>
-                  ))}
+                {event.rules.map((data, index) => (
+                  <ul key={index}>
+                    <p>• {data}</p>
+                  </ul>
+                ))}
               </div>
-            }
+            )}
             <br />
-            {
-              event.regLink === "On-Spot Registration" ?
+            {event.regLink === "On-Spot Registration" ? (
+              <div className={styles.titles} style={{ textDecoration: "none" }}>
+                <div
+                  className={styles.titleHighlight}
+                >
+                  {event.regLink}
+                </div>
+              </div>
+            ) : (
               <div
-              className={styles.titles}
-              style={{ textDecoration: "none" }}
+                onClick={() => {
+                  window.open(event.regLink, "_blank", "noopener,noreferrer");
+                }}
+                className={styles.titlesReg}
+                style={{ textDecoration: "none" }}
               >
-              <div className={styles.titleHighlight}>{event.regLink}</div>
-            </div>
-            :
-            <div
-            onClick={()=>{
-              window.open(event.regLink,"_blank",'noopener,noreferrer');
-            }}
-              className={styles.titlesReg}
-              style={{ textDecoration: "none" }}
-            >
-              <div className={styles.titleHighlight}>Register</div>
-            </div>
-            }
+                <div className={styles.titleHighlight}>Register</div>
+              </div>
+            )}
           </div>
         </div>
       </div>
