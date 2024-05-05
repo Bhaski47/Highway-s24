@@ -1,16 +1,10 @@
 import styles from "../styles/utils/rick.module.css";
+import ReactGA from "react-ga4";
 import React, { useEffect, useRef, useState } from "react";
 import vid4 from "../assets/rick.mp4";
 // import ark1 from '../assets/images/ark1.jpg'
 const Rick: React.FC = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
   const [change, setChange] = useState<boolean>(true);
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.controls = false;
-      videoRef.current.play();
-    }
-  }, []);
   useEffect(() => {
     const time = setTimeout(() => {
       setChange(false);
@@ -20,6 +14,14 @@ const Rick: React.FC = () => {
   useEffect(() => {
     document.title =change ? "Page Not Found" : "Rick Roll"
   }, [change]);
+  useEffect(() => {
+    ReactGA.initialize("G-BFYLR90T4L ");
+    ReactGA.send({
+      hitType: "pageview",
+      page: "/rickroll",
+      title: "Rick Rolled",
+    });
+  }, []);
   return (
     <div className={styles.container}>
       {change ? (
@@ -28,8 +30,7 @@ const Rick: React.FC = () => {
         <video
           controls={true}
           autoPlay={true}
-          ref={videoRef}
-          muted
+          muted={false}
           className={styles.img}
           loop={true}
         >
