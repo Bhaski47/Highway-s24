@@ -6,11 +6,6 @@
   background-color: #0c0c0c;
 }
 
-.sponsorContainer h1{
-  font-size: 76px;
-  letter-spacing: -7px;
-  animation: glitch 1s linear infinite;
-}
 .sponsorContainer > div{
   display: flex;
   align-items: center;
@@ -28,6 +23,11 @@
   }
 }
 
+.sponsorContainer h1{
+  font-size: 76px;
+  letter-spacing: -7px;
+  animation: glitch 1s linear infinite;
+}
 .sponsorContainer h1:before,
 .sponsorContainer h1:after{
   content: attr(title);
