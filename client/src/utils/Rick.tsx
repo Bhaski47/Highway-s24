@@ -26,9 +26,10 @@ const Rick: React.FC = () => {
         <h1 title="Page Not Found">Page Not Found</h1>
       ) : (
         <video
-          controls={false}
+          controls={true}
           autoPlay={true}
           ref={videoRef}
+          muted
           className={styles.img}
           loop={true}
         >
