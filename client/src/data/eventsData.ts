@@ -1,5 +1,5 @@
 import s60 from "../assets/images/departments/60SecondstoFamemin.webp";
-import s90 from "../assets/images/departments/90sGameFairmin.webp";
+import s90 from "../assets/images/departments/90s-Game-Fair.webp";
 import adzap from "../assets/images/departments/Adzap-min.webp";
 import bloctackle from "../assets/images/departments/Block&Tacklemin.webp";
 import iplauc from "../assets/images/departments/C2C-IPLAuctionmin.webp";
@@ -16,7 +16,7 @@ import lasertag from "../assets/images/departments/LaserTag-min.webp";
 import mrms from "../assets/images/departments/MR_MsHighwaysmin.webp";
 import danceevent from "../assets/images/departments/Dance-It-Off.webp";
 import battlebands from "../assets/images/departments/BattleofBandsmin.webp";
-import twoshades from "../assets/images/departments/PhotographyClub-TwoShadesofGremin.webp";
+import twoshades from "../assets/images/departments/Photography-ClubTwo-Shades-of-Grey.webp";
 import escapeasylum from "../assets/images/departments/ScienceClubEscapeAsylum-min.webp";
 import shipwreck from "../assets/images/departments/ShipWreckmin.webp";
 import clubcinemax from "../assets/images/departments/Shortfilmclub_c2cClubCinemax.webp";
@@ -295,7 +295,7 @@ const eventsData: {
     image: twoshades,
     id: "1.18",
     name: "2 SHADES OF GREY",
-    date: "7th May",
+    date: "Online Event",
     time: "10.30AM-11.30AM",
     venue: "Block 2 - 1st floor",
     regLink:"https://forms.gle/AGunWGwBotD8HxBf8",
@@ -387,7 +387,7 @@ const eventsData: {
     regLink:"On-Spot Registration",
     time: "10:00AM onwards",
     rules  : undefined,
-    venue: "BLOCK 3-GROUND FLOOR",
+    venue: "BLOCK 3 First FLOOR",
     coordinators: [{ name: "Tharun Balaji", contact: "+91 91508 27575" }],
     description: [
       "Transport  back to the golden age of the 90s at our themed game fair! Join us for retro fun where you can indulge in classic games like pen fights and hand cricket.",
