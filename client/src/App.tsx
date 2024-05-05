@@ -5,7 +5,6 @@ import About from "./page/About";
 import Footer from "./components/common/Footer";
 import Sponsors from "./page/Sponsors";
 import Location from "./page/Location";
-// import Events from './page/Events';
 import ReactGA from "react-ga4";
 import EventSection from "./page/EventSection";
 import EventInfo from "./page/EventInfo";
@@ -62,23 +61,13 @@ const router = createBrowserRouter([
     ),
     errorElement: <PageNotFound />,
   },
-  // {
-  //   path: "/events/:events",
-  //   element: (
-  //     <>
-  //       <Events />
-  //       <Footer />
-  //     </>
-  //   ),
-  // },
   {
     path: "/team",
+    errorElement: <PageNotFound />,
     element: (
       <>
         <TechTeam />
         <Footer />
-        errorElement:
-        <PageNotFound />,
       </>
     ),
   },

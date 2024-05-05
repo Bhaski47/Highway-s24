@@ -3,10 +3,11 @@ import Header from "../components/common/Header";
 import styles from "../styles/pages/sponsors.module.css";
 import productionpartner from "../assets/images/sponsor/productionpartner.webp";
 import eventpartner from "../assets/images/sponsor/sponsor1.webp";
-import { useWindowSize } from "react-use";
-import Confetti from "react-confetti";
+import merchandisepartner from "../assets/images/sponsor/PLA-vertical-CMYK-color_dark-@2x.webp";
+import travelpartner from "../assets/images/sponsor/nammayatri.webp";
+import ConfettiPopper from "../utils/ConfettiPopper";
+
 const Sponsors: React.FC = () => {
-  const { width, height } = useWindowSize();
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "Sponsors | Highways";
@@ -26,12 +27,22 @@ const Sponsors: React.FC = () => {
       name: "Event Partner",
       img: eventpartner,
     },
+    {
+      id: 3,
+      name: "Merchandise Partner",
+      img: merchandisepartner,
+    },
+    {
+      id: 4,
+      name: "Travel Partner",
+      img: travelpartner,
+    },
   ];
   return (
     <>
       <Header />
       <div className={styles.container} id="sponsors">
-        <Confetti width={width} height={height} recycle={false} />
+        <ConfettiPopper/>
         <h1 className={styles.heading}>OUR SPONSORS</h1>
         <div className={styles.sponsorContainer}>
           {sponsor.map((data) => (
