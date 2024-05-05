@@ -5,11 +5,8 @@ import vaisagh from "../assets/images/walkings/Highways'24_vaisagh1.webp";
 import dj from "../assets/images/walkings/Highways'24_DJLash.webp";
 import joke from "../assets/images/walkings/1.webp";
 import vj from "../assets/images/walkings/Highways'24-VJSiddhuvlogs.webp";
+import mirna from "../assets/images/walkings/Mirnaamenonday 2.webp";
 const CelebrityWalkin: React.FC = () => {
-  // useEffect(()=>{
-  //     window.scrollTo(0, 0);
-  //     document.title = "CelebrityWalking | Highways";
-  // },[])
   const walkings: {
     id: number;
     img: string;
@@ -37,14 +34,9 @@ const CelebrityWalkin: React.FC = () => {
     },
     {
       id: 5,
-      img: "?",
+      img: mirna,
       name: "Walk In Day 2",
-    },
-    //     {
-    //     id:4,
-    //     img:"?",
-    //     name:"Judge 1"
-    // },
+    }
   ];
   return (
     <>
