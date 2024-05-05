@@ -30,7 +30,7 @@ const Rick: React.FC = () => {
         <video
           controls={true}
           autoPlay={true}
-          muted={false}
+          muted={true}
           className={styles.img}
           loop={true}
         >
