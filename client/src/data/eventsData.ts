@@ -14,13 +14,14 @@ import fifa from "../assets/images/departments/FIFAFootball-min.webp";
 import greenscreen from "../assets/images/departments/GreenScreenmin.webp";
 import lasertag from "../assets/images/departments/LaserTag-min.webp";
 import mrms from "../assets/images/departments/MR_MsHighwaysmin.webp";
-// import danceevent from "../assets/images/departments/MusicClub-BattleofBandsmin.webp";
+import danceevent from "../assets/images/departments/Dance-It-Off.webp";
 import battlebands from "../assets/images/departments/BattleofBandsmin.webp";
 import twoshades from "../assets/images/departments/PhotographyClub-TwoShadesofGremin.webp";
 import escapeasylum from "../assets/images/departments/ScienceClubEscapeAsylum-min.webp";
 import shipwreck from "../assets/images/departments/ShipWreckmin.webp";
 import clubcinemax from "../assets/images/departments/Shortfilmclub_c2cClubCinemax.webp";
-import bgmi from "../assets/images/departments/Student-Council-BGMI-min-1.webp";
+import bgmi from "../assets/images/departments/Student-Council-BGMI.webp";
+import freefire from "../assets/images/departments/Free-Fire-Event.webp";
 import ithaanda from "../assets/images/departments/Shortfilmclub-IthaanDaCinemamin.webp";
 import memeMarcket from "../assets/images/departments/E-CellSVCE-MemeMarketingmin.webp";
 import monopoly from "../assets/images/departments/E-CellSVCEMonopolyMadness-min.webp";
@@ -131,19 +132,6 @@ const eventsData: {
       "Participants are evaluated based on their ability to navigate challenges, make informed decisions, and achieve business success. Business model canvas will be awarded brownie points",
     ],
   },
-  // {
-  //   image: bgmi,
-  //   id: "1.6",
-  //   rules  : undefined,
-  //   name: "Film fest",
-  //   date: "7th May ",
-  //   time: "10:15AM-1:15PM",
-  //   venue: "BIOTECH SEMINAR HALL",
-  //   coordinators: [{ name: "Nishaanth k", contact: "6374456933" }],
-  //   description: [
-  //     "An intercollege Shortfilm competition where the qualified Shortfilms are shotlisted screened and judged receiving a cash prize and certificates.",
-  //   ],
-  // },
   {
     image: clubcinemax,
     id: "1.8",
@@ -209,22 +197,6 @@ const eventsData: {
       "The auction format adds an element of excitement and unpredictability, making it a must-watch event for all cricket enthusiasts.",
     ],
   },
-  // {
-  //   image: bgmi,
-  //   id: "1.12",
-  //   name: "MOVIE SCREENING",
-  //   rules  : undefined,
-  //   date: "7th May ",
-  //   time: "11:00AM-3:00PM",
-  //   venue: "FUNCTION HALL",
-  //   coordinators: [{ name: "Vinochan KB", contact: "+91 86374 31560" }],
-  //   description: [
-  //     "Have a say in what movies make it to the big screen by casting your votes on our social media platforms",
-  //     "Choose from a curated selection of blockbuster hits, cult classics, and fan-favorite films to create the ultimate movie lineup",
-  //     "Sit back, relax, and enjoy an immersive cinematic experience under the stars as the chosen movies come to life on the big screen.",
-  //     "Whether you're a fan of action, comedy, drama, or romance, there's something for everyone at our movie screening event.",
-  //   ],
-  // },
   {
     image: fifa,
     regLink:"On-Spot Registration",
@@ -346,6 +318,34 @@ const eventsData: {
     ],
   },
   {
+    image: bgmi,
+    id: "1.19",
+    name: "BGMI",
+    date: "7th May",
+    time: "10.00AM ONWARDS",
+    venue: "EG HALL FIRST FLOOR",
+    regLink:"https://forms.gle/dHjn2BQ6n5GhLzBD6",
+    rules  : ["Team consists of 4 players.","Usage of hacks and gfx tools will disqualify the team.","No ipads or tablets allowed.","Players should strictly follow discipline in all mics","Teammates can be comprised from other colleges","Players are requested to bring their own chargers.If possible a junction box.","It is completely an offline event.","Players should bring their college id cards for verification purposes.","Indulging in any kind of malpractice will lead to instant disqualification of the participants"],
+    coordinators: [
+      { name: "Siddharth", contact: "+91 90036 99967" },
+    ],
+    description: ["Dive into our exhilarating BGMI tournament for intense battles, strategic plays, and the chance to emerge as the ultimate champion."],
+  },
+  {
+    image: freefire,
+    id: "1.20",
+    name: "Free Fire",
+    date: "7th May",
+    time: "10.00AM ONWARDS",
+    venue: "EG HALL SECOND FLOOR",
+    regLink:"https://docs.google.com/forms/d/e/1FAIpQLSdPaj1R0l636l3rPzM_x7EicwgSrEzlIp_ZiAiDThQN1v-7Gg/viewform?usp=sf_link",
+    rules  : [" No use of any hack ","No emoting or provoking other team mates after victory or taking down","Quater finalists will be selected according to the top 4 squads who are in the final battle of full map","Quater,semi and final will be conducted by clash squad rounds","No pc players allowed, Only mobile players"],
+    coordinators: [
+      { name: "Tharun D", contact: "+91 95973 21030" },
+    ],
+    description: ["Prepare for the ultimate showdown in our Free Fire tournament, where skill, strategy, and teamwork collide for thrilling battles and victory!"],
+  },
+  {
     image: greenscreen,
     id: "2.1",
     rules  : undefined,
@@ -433,20 +433,18 @@ const eventsData: {
       "This is a group event with a minimum of 3 players in a team.",
     ],
   },
-  // {
-  //   image: moviescreen,
-  //   id: "2.6",
-  //   name: "CINEMAX",
-  //   date: "8th May 2024",
-  //   rules  : undefined,
-  //   time: "11:00AM-3:00PM",
-  //   venue: "FUNCTION HALL",
-  //   coordinators: [{ name: "Nishaanth K", contact: "+91 63744 56933" }],
-  //   description: [
-  //     // "Cinemax offers a screening of a sensational film to entertain the audience crowd.",
-  //     "Screening of a sensational film to entertain the audience crowd",
-  //   ],
-  // },
+  {
+    image: danceevent ,
+    id: "2.6",
+    regLink:"https://docs.google.com/forms/d/e/1FAIpQLSegs3M9rG1S-93b9F3urBBYcgKXYTdFCYMsElw4dxTDB0_k4g/viewform?usp=sf_link",
+    name: "DANCE IT OFF (Solo adaptune)",
+    date: "8th May 2024",
+    rules  : ["Duration of the performance for each participant will only be for 3 mins","No form of vulgarities or properties should be used ","Any and all styles of dance","Judges decision will be final"],
+    time: "10:30 - 12:00AM",
+    venue: "MPH STAGE",
+    coordinators: [{ name: "Abinav R", contact: "+91 73387 55434" }],
+    description: [],
+  },
   {
     image: mrms,
     regLink:"On-Spot Registration",
@@ -578,21 +576,6 @@ const eventsData: {
   //     "This process continues until a full-fledged script is formed.",
   //   ],
   // },
-  {
-    image: bgmi,
-    id: "2.14",
-    name: "Dance Events",
-    date: "TBA ",
-    time: "TBA",
-    venue: "TBA",
-    regLink:"On-Spot Registration",
-    rules  : undefined,
-    coordinators: [
-      { name: "TBA", contact: "TBA" },
-      // { name: "Jhalak", contact: "+91 94442 43793" },
-    ],
-    description: [],
-  },
 ];
 
 export default eventsData;

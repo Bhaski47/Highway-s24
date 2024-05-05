@@ -24,8 +24,8 @@
 }
 
 .sponsorContainer h1{
-  font-size: 76px;
-  letter-spacing: -7px;
+  font-size: 56px;
+  letter-spacing: -3px;
   animation: glitch 1s linear infinite;
 }
 .sponsorContainer h1:before,
@@ -84,7 +84,7 @@
   text-align: center;
 }
 .sponsorContainer img{
-  width: 30%;
+  width: 20%;
 }
 .sponsorContainer {
   position: relative;

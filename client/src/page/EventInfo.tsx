@@ -67,13 +67,17 @@ const EventInfo: React.FC = () => {
                 <h3>{89}</h3>
               </div> */}
             </div>
-            <h2>Description</h2>
-            {event.description.map((des) => (
+            {event.description[0]!==undefined && (
               <>
-                <p>• {des}</p>
-                <br />
+                <h2>Description</h2>
+                {event.description.map((des) => (
+                  <>
+                    <p>• {des}</p>
+                    <br />
+                  </>
+                ))}
               </>
-            ))}
+            )}
             <h2>Event Coordinator</h2>
             <p>{`${event.coordinators[0].name}  ${event.coordinators[0].contact}`}</p>
             <br />
@@ -90,11 +94,7 @@ const EventInfo: React.FC = () => {
             <br />
             {event.regLink === "On-Spot Registration" ? (
               <div className={styles.titles} style={{ textDecoration: "none" }}>
-                <div
-                  className={styles.titleHighlight}
-                >
-                  {event.regLink}
-                </div>
+                <div className={styles.titleHighlight}>{event.regLink}</div>
               </div>
             ) : (
               <div

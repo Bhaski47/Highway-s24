@@ -3,8 +3,8 @@ import Header from "../components/common/Header";
 import styles from "../styles/pages/sponsors.module.css";
 import productionpartner from "../assets/images/sponsor/productionpartner.webp";
 import eventpartner from "../assets/images/sponsor/sponsor1.webp";
-import merchandisepartner from "../assets/images/sponsor/PLA-vertical-CMYK-color_dark-@2x.webp";
-import travelpartner from "../assets/images/sponsor/nammayatri.webp";
+import merchandisepartner from "../assets/images/sponsor/Pla_merchant_sponsor-removebg-preview.png";
+import travelpartner from "../assets/images/sponsor/TRAVEL_partner-removebg-preview.png";
 import ConfettiPopper from "../utils/ConfettiPopper";
 
 const Sponsors: React.FC = () => {
