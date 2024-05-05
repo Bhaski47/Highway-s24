@@ -1,8 +1,8 @@
 import styles from "../styles/pages/buyPass.module.css";
 import Header from "../components/common/Header";
-import may_7 from "../assets/images/may_7.png";
-import may_8 from "../assets/images/may_8.png";
-import combo from "../assets/images/combo.png";
+// import may_7 from "../assets/images/may_7.png";
+// import may_8 from "../assets/images/may_8.png";
+// import combo from "../assets/images/combo.png";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { passesData } from "../data/passesData";

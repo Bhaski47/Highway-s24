@@ -1,0 +1,80 @@
+.container{
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+.container h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 76px;
+    letter-spacing: -7px;
+    animation: glitch 1s linear infinite;
+  }
+  .container h1:before,
+  .container h1:after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
+  }
+  
+  .container h1:before{
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+  
+  @keyframes glitchTop{
+    2%,64%{
+      transform: translate(2px,-2px);
+    }
+    4%,60%{
+      transform: translate(-2px,2px);
+    }
+    62%{
+      transform: translate(13px,-1px) skew(-13deg); 
+    }
+  }
+  
+  .container h1:after{
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+  
+  @keyframes glitchBotom{
+    2%,64%{
+      transform: translate(-2px,0);
+    }
+    4%,60%{
+      transform: translate(-2px,0);
+    }
+    62%{
+      transform: translate(-22px,5px) skew(21deg); 
+    }
+  }
+.container video{
+    position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    width: 70vw;
+}
+
+@media screen and (width < 480px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container video{
+        width: 100vw;
+    }
+    .container h1 {
+        font-size: 7vw;
+        word-spacing: 10px;
+        letter-spacing: -3px;
+      }
+}
