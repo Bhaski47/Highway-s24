@@ -67,7 +67,7 @@ const EventInfo: React.FC = () => {
                 <h3>{89}</h3>
               </div> */}
             </div>
-            {event.description[0]!==undefined && (
+            {event.description[0] !== undefined && (
               <>
                 <h2>Description</h2>
                 {event.description.map((des) => (
@@ -78,9 +78,6 @@ const EventInfo: React.FC = () => {
                 ))}
               </>
             )}
-            <h2>Event Coordinator</h2>
-            <p>{`${event.coordinators[0].name}  ${event.coordinators[0].contact}`}</p>
-            <br />
             {event.rules && (
               <div>
                 <h2>Rules</h2>
@@ -107,6 +104,10 @@ const EventInfo: React.FC = () => {
                 <div className={styles.titleHighlight}>Register</div>
               </div>
             )}
+            <br />
+            <h2>Event Coordinator</h2>
+            <p>{`${event.coordinators[0].name}  ${event.coordinators[0].contact}`}</p>
+            <br />
           </div>
         </div>
       </div>

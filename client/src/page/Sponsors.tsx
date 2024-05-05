@@ -24,7 +24,7 @@ const Sponsors: React.FC = () => {
     },
     {
       id: 2,
-      name: "Event Partner",
+      name: "Event Sponsor",
       img: eventpartner,
     },
     {
