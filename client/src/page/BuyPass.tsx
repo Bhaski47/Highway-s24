@@ -37,7 +37,7 @@ const BuyPass: React.FC = () => {
                   color: "gray",
                 }}
               >
-                ( Inclusive of Classical Events, Proshows )
+                {pass?.inclusive}
               </p>
               <br />
               <p>Book your tickets here</p>
