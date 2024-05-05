@@ -13,7 +13,7 @@ const Video: React.FC = () => {
   }, []);
   return (
     <div>
-      <video controls={false} autoPlay={true} ref={videoRef} muted={true} className={styles.img} loop={true}>
+      <video controls={false} autoPlay={true} ref={videoRef} muted={false} className={styles.img} loop={true}>
         <source src={vid4} type="video/mp4" />
       </video>
       {/* <img src={ark1} alt="vid" className={styles.img}/> */}

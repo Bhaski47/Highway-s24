@@ -1,6 +1,6 @@
 import styles from "../styles/utils/rick.module.css";
 import ReactGA from "react-ga4";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import vid4 from "../assets/rick.mp4";
 // import ark1 from '../assets/images/ark1.jpg'
 const Rick: React.FC = () => {
