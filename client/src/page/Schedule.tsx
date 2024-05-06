@@ -14,11 +14,14 @@ const Schedule: React.FC = () => {
     name: string;
     time: string;
   }[] = [
-    { name: "INAUGURAL", time: "9.00 - 10.00 AM" },
-    { name: "WALKIN", time: "9.00 - 10.00 AM" },
-    { name: "DANCE", time: "9.00 - 10.00 AM" },
-    { name: "MUSIC", time: "9.00 - 10.00 AM" },
-    { name: "WALK IN", time: "9.00 - 10.00 AM" },
+    { name: "Inauguration", time: "9.30 - 10.00 AM" },
+    { name: "Music Host Performance", time: "10.00 - 10.30 AM" },
+    { name: "Battle Of Bands", time: "10.30 - 12.30 AM" },
+    { name: "Classic Events", time: "10.30 AM - 3.00 PM" },
+    { name: "VJ Siddhu Walkin", time: "3.30 - 4.30 PM" },
+    { name: "Vaisaag Concert", time: "4:30 PM - 6:00 PM" },
+    { name: "Buffer Time", time: "30 Minutes" },
+    { name: "Bus Departure", time: "7:00 PM" },
     { name: "", time: "" },
   ];
 
