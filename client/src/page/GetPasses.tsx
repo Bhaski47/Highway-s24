@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import ReactGA from "react-ga4";
 import { passesData } from "../data/passesData";
+import flash_sale from "../assets/images/sale.png";
 
 const GetPasses: React.FC = () => {
   useEffect(() => {
@@ -15,8 +16,14 @@ const GetPasses: React.FC = () => {
     <>
       <Header />
       <div className={styles.getPasses}>
-        <h1 className={styles.heading}>Buy Your Passes</h1>
         <center>
+          <img src={flash_sale} alt="" width={350} />
+          <h1>Early Bird Price is back</h1>
+          <h1>Get Combo pass with just 599</h1>
+          <br />
+          <br />
+          <br />
+        <h1 className={styles.heading}>Buy Your Passes</h1>
           <div className={styles.passContainer}>
             {passesData.map((pass) => {
               return (
