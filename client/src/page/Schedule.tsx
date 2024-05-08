@@ -41,11 +41,18 @@ const Schedule: React.FC = () => {
     name: string;
     time: string;
   }[] = [
-    { name: "INAUGURAL", time: "9.00 - 10.00 AM" },
-    { name: "WALKIN", time: "9.00 - 10.00 AM" },
-    { name: "DANCE", time: "9.00 - 10.00 AM" },
-    { name: "MUSIC", time: "9.00 - 10.00 AM" },
-    { name: "WALK IN", time: "9.00 - 10.00 AM" },
+    { name: "90's Game Fair", time: "9:30AM Onwards" },
+    { name: "Laser Tag", time: "9.30AM-2.30PM" },
+    { name: "Fifa Football", time: "9.30AM-2.30PM" },
+    { name: "Spin-A-Yarn", time: "10.00AM-11.00AM" },
+    { name: "Cinemax", time: "10.00AM-2.30PM" },
+    { name: "Monopoly Madness", time: "10.15AM ONWARDS" },
+    { name: "Jagadish On A Mission", time: "10.15AM-2.30PM" },
+    { name: "Solo Adaptune", time: "10:30PM-12:00PM" },
+    { name: "IPL Auction", time: "11.00AM-2.30PM" },
+    { name: "Standup", time: "2:30PM-3:30PM" },
+    { name: "Mirna Walkin", time: "3:30PM-4:30PM" },
+    { name: "DJ Night", time: "5:00PM-6:30PM" },
     { name: "", time: "" },
   ];
 
